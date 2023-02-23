@@ -1,4 +1,4 @@
-var height = 395;
+var height = 790;
 calendarScripts = new Array();
 function getCalendarScripts() {
     var scripts = document.getElementsByTagName('script');
@@ -56,7 +56,7 @@ function getAttributes() {
         for (i = 0; i < document.getElementsByTagName("script").length; i++) {
             var s = document.getElementsByTagName("script")[i];
             if (s.src && s.src.match(/fxCalendar\.js(\?.*)?$/))
-                request = s.src.match(/\?([a-z0-19,&=]*)/)[0];
+                request = s.src.match(/\?([a-z0-9,&=]*)/)[0];
         }
     } catch (e) {
         return '';
