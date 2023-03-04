@@ -11,19 +11,1777 @@
   
 </head>
 <body>
-  <iframe 
-src="https://sslecal2.investing.com?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&category=_employment,_economicActivity,_inflation,_credit,_centralBanks,_confidenceIndex,_balance,_Bonds&importance=1,2,3&features=datepicker,timezone,timeselector,filters&countries=25,6,37,72,22,17,39,10,35,43,26,12,4,5&calType=day&timeZone=25&lang=1" 
-width="650" 
-height="800" 
-frameborder="0" 
-allowtransparency="true" 
-marginwidth="0" 
-marginheight="0">
-</iframe>
-<div>
+	
+<div id="adsense" style="visibility: hidden; display: none;">ad</div>
+<script src="https://i-invdn-com.investing.com/js/jquery-1.10.2.min.js"></script>
+<script src="https://i-invdn-com.investing.com/js/jquery.pseudo-1.1.min.js"></script>
+<script src="https://i-invdn-com.investing.com/js/jquery-ui-1.9.1.min.js"></script>
+<script type="text/javascript" src="https://i-invdn-com.investing.com/js/dlinks.js"></script>
+<script type="text/javascript" src="/view/ecaltool_v2.js"></script>
+<link rel="stylesheet" href="https://i-invdn-com.investing.com/webmaster-tools/buttons-css/nyx_classes_75.css" type="text/css">
+<style>
+/* RESET */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin:0;padding:0;border:0;font-size:100%;font:inherit;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display:block;}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:, blockquote:after,q:, q:after {content:'';	content:none;}
+table {border-collapse:collapse; border-spacing:0;}
+/* /RESET */
 
-<a href="javascript:void(0);" onclick="changeFiltersVisibility();" id="filterStateAnchor" class="newBtn filter LightGray float_lang_base_1">Filters<span class="newSiteIconsSprite filtersOnLight" id="filterStateButton"></span></a>
-<ul id="timeselector" class="float_lang_base_2 dateBtns">
+BODY {text-align:left; background:none;font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#333333; margin:0; padding:2px 0 0; background-color:#FFF;}
+INPUT:focus, TEXTAREA:focus {outline:none;}
+DIV, TABLE, TR, TD, UL, OL, LI, FORM, INPUT, SELECT {margin:0; padding:0;}
+INPUT {vertical-align: middle;}
+A {text-decoration:none; color:#1256A0; outline:none;}
+A:hover {text-decoration:underline;}
+
+.arial_10 {font-size:10px;}
+.arial_11 {font-size:11px;}
+.arial_12 {font-size:12px;}
+.arial_14 {font-size:14px;}
+.arial_15 {font-size:15px;}
+.arial_16 {font-size:16px;}
+.arial_24 {font-size:24px;}
+
+.lightgrayFont {color:#808080;}
+.greenFont {color:#0EA600}
+.redFont {color:#FF0000;}
+.neutralFont {color:#808080;}
+.blackFont {color:#000;}
+
+.bold {font-weight:bold;}
+
+.text_align_lang_base_1{text-align:left;}
+.text_align_lang_base_2{text-align:right;}
+.align_center{text-align:center;}
+.align_right{text-align:right;}
+.align_left{text-align:left;}
+
+.dirLtr{direction:ltr;}
+.dirRtl{direction:rtl;}
+.dir_lang_base_1 {direction:ltr;}
+.dir_lang_base_2 {direction:rtl;}
+
+.fLeft{float:left;}
+.fRight{float:right;}
+.float_lang_base_1 {float:left;}
+.float_lang_base_2 {float:right;}
+.clear {clear:both;}
+.auto {margin:0 auto;}
+
+.inline {display:inline;}
+.block {display:block;}
+.displayNone {display:none;}
+.inlineblock {display:inline-block; *display:inline; zoom:1;}
+.hidden {visibility:hidden;}
+.visible {visibility:visible;}
+.vertical, .middle {vertical-align:middle !important;}
+.top, .alignTop {vertical-align:top !important;}
+.alignBottom {vertical-align:bottom !important;}
+.arrows {background-image:url('https://i-invdn-com.investing.com/arrows_v10.png'); background-repeat:no-repeat;}
+.darkGrayDownArrow {background-position:0 -336px; padding:0 4px 0 0; margin:3px 3px 0; height:10px;}
+.wordBreak {word-wrap:break-word;}
+.uppercaseText {text-transform:uppercase;}
+
+.newSiteIconsSprite {background-image: url('https://i-invdn-com.investing.com/newSiteIconsSprite_v30i.png');}
+.downArrow {background-position:-96px -478px; width:21px; height:21px; margin:9px 9px 0 -1px;}
+.noneArrow {background-position:-121px -478px; width:21px; height:21px; margin:9px 9px 0 -1px;}
+.upArrow {background-position:-70px -478px; width:22px; height:21px; margin:9px 9px 0 -1px;}
+.greenClockIcon {background-position:-33px -42px; padding:0 0 3px 10px;}
+.redClockIcon {background-position:-33px -20px; padding:0 0 3px 10px;}
+.datePickerIcon {background-position:-73px -718px; width:15px; height:13px; margin-top:3px;}
+.audioIconNew {background-position:-74px -581px; width: 18px; height: 13px; display:inline-block;}
+.diamondNewIcon {background-color:#edb23b; -moz-border-radius:5px; -ms-border-radius:5px; -o-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; width:7px; height:7px;}
+.sandClock {background-position:-119px -582px; width: 10px; height: 14px; display:inline-block;}
+.smallGrayP {background-position:-98px -583px; width: 15px;	height: 12px; display:inline-block;}
+.grayClockIcon {background-position:-136px -643px; display:inline-block; width:12px; height:13px;}
+.dropDownArrowGray {background-position:-111px -107px; padding:0 5px 0;}
+.searchGlassIcon {background-position: 3px -40px; border-left: 1px solid #0D416F; margin: 2px 0 0; padding: 0; width: 16px; height: 16px;}
+.ecoSearchBox .searchGlassIcon {border-left: none; margin: 0; background-position: -130px -1057px; padding: 1px 13px 0 4px;}
+.ecoFilterRestoreIcon {background-position:-130px -1073px; padding:0 7px; margin-right:5px;}
+/* Flags */
+.ceFlags{
+	width: 16px;
+	height: 15px;
+	background-image: url('https://i-invdn-com.investing.com/ce_flags_v6.png');
+	background-repeat: no-repeat;
+	padding: 0;
+	display: inline-block;
+	}
+.ASEAN{background-position:0 0;} 
+.Afghanistan{background-position:0 -17px;} 
+.AfricanUnion{background-position:0 -34px;} 
+.Albania{background-position:0 -51px;} 
+.Algeria{background-position:0 -68px;} 
+.AmericanSamoa{background-position:0 -85px;} 
+.Andorra{background-position:0 -102px;} 
+.Angola{background-position:0 -119px;} 
+.Anguilla{background-position:0 -136px;} 
+.Antarctica{background-position:0 -153px;} 
+.AntiguaBarbuda{background-position:0 -170px;} 
+.ArabLeague{background-position:0 -187px;} 
+.Argentina, .ars{background-position:0 -204px;} 
+.Armenia{background-position:0 -221px;} 
+.Aruba{background-position:0 -238px;} 
+.Australia, .aus, .aud{background-position:0 -255px;} 
+.Austria{background-position:0 -272px;} 
+.Azerbaijan{background-position:0 -289px;} 
+.Bahamas{background-position:0 -306px;} 
+.Bahrain{background-position:0 -323px;} 
+.Bangladesh{background-position:0 -340px;} 
+.Barbados{background-position:0 -357px;} 
+.Belarus{background-position:0 -374px;} 
+.Belgium{background-position:0 -391px;} 
+.Belize{background-position:0 -408px;} 
+.Benin{background-position:0 -425px;} 
+.Bermuda{background-position:0 -442px;} 
+.Bhutan{background-position:0 -459px;} 
+.Bolivia{background-position:0 -476px;} 
+.Bosnia, .Bosnia_and_Herzegovina {background-position: 0 -493px;}
+.Botswana{background-position:0 -510px;} 
+.Brazil, .brl{background-position:0 -527px;} 
+.Brunei{background-position:0 -544px;} 
+.Bulgaria{background-position:0 -561px;} 
+.BurkinaFaso{background-position:0 -578px;} 
+.Burundi{background-position:0 -595px;} 
+.CARICOM{background-position:0 -612px;} 
+.CIS{background-position:0 -629px;} 
+.Cambodja{background-position:0 -646px;} 
+.Cameroon{background-position:0 -663px;} 
+.Canada, .can, .cad{background-position:0 -680px;} 
+.CapeVerde, .Cape_Verde{background-position:0 -697px;} 
+.Cayman_Islands{background-position:0 -714px;} 
+.Central_African_Republic{background-position:0 -731px;} 
+.Chad{background-position:0 -748px;} 
+.Chile, .clp{background-position:0 -765px;} 
+.China, .cny{background-position:0 -782px;} 
+.Colombia, .cop{background-position:0 -799px;} 
+.Commonwealth{background-position:0 -816px;} 
+.Comoros{background-position:0 -833px;} 
+.Congo-Brazzaville{background-position:0 -850px;} 
+.Congo-KinshasaZaire{background-position:0 -867px;} 
+.Cook_Islands{background-position:0 -884px;} 
+.Costa_Rica{background-position:0 -901px;} 
+.Cote_dIvoire{background-position:0 -918px;} 
+.Croatia{background-position:0 -935px;} 
+.Cuba{background-position:0 -952px;} 
+.Cyprus{background-position:0 -969px;} 
+.Czech_Republic, .czk{background-position:0 -986px;} 
+.Denmark, .dkk{background-position:0 -1003px;} 
+.Djibouti{background-position:0 -1020px;} 
+.Dominica{background-position:0 -1037px;} 
+.Dominican_Republic{background-position:0 -1054px;}
+.Dubai{background-position:-17px -1819px;}
+.EastTimor{background-position:0 -1071px;} 
+.Ecuador{background-position:0 -1088px;} 
+.Egypt{background-position:0 -1105px;} 
+.El_Salvador{background-position:0 -1122px;} 
+.England{background-position:0 -1139px;} 
+.EquatorialGuinea{background-position:0 -1156px;} 
+.Eritrea{background-position:0 -1173px;} 
+.Estonia{background-position:0 -1190px;} 
+.Ethiopia{background-position:0 -1207px;} 
+.European_Union, .eur, .Europe {background-position:0 -1224px;} 
+.Faroes{background-position:0 -1241px;} 
+.Fiji{background-position:0 -1258px;} 
+.Finland{background-position:0 -1275px;} 
+.France{background-position:0 -1292px;} 
+.Gabon{background-position:0 -1309px;} 
+.Gambia{background-position:0 -1326px;} 
+.Georgia{background-position:0 -1343px;} 
+.Germany{background-position:0 -1360px;} 
+.Ghana{background-position:0 -1377px;} 
+.Gibraltar{background-position:0 -1394px;} 
+.Greece{background-position:0 -1411px;} 
+.Greenland{background-position:0 -1428px;} 
+.Grenada{background-position:0 -1445px;} 
+.Guadeloupe{background-position:0 -1462px;} 
+.Guademala{background-position:0 -1479px;} 
+.Guam{background-position:0 -1496px;} 
+.Guinea-Bissau{background-position:0 -1513px;} 
+.Guinea{background-position:0 -1530px;} 
+.Guyana{background-position:0 -1547px;} 
+.Haiti{background-position:0 -1564px;} 
+.Honduras{background-position:0 -1581px;} 
+.Hong_Kong, .hkd{background-position:0 -1598px;} 
+.Hungary, .huf{background-position:0 -1615px;} 
+.Iceland{background-position:0 -1632px;} 
+.India, .inr{background-position:0 -1649px;} 
+.Indonesia, .idr{background-position:0 -1666px;} 
+.Iran{background-position:0 -1683px;} 
+.Iraq{background-position:0 -1700px;} 
+.Ireland{background-position:0 -1717px;} 
+.IslamicConference{background-position:0 -1734px;} 
+.Israel{background-position:0 -1751px;} 
+.Italy{background-position:0 -1768px;} 
+.Jamaica{background-position:0 -1785px;} 
+.Japan, .jpn, .jpy{background-position:0 -1802px;} 
+.Jersey{background-position:0 -1819px;} 
+.Jordan{background-position:0 -1836px;} 
+.Kazakhstan{background-position:0 -1853px;} 
+.Kenya{background-position:0 -1870px;} 
+.Kiribati{background-position:0 -1887px;} 
+.Kuwait{background-position:0 -1904px;} 
+.Kyrgyzstan{background-position:0 -1921px;} 
+.Laos{background-position:0 -1938px;} 
+.Latvia{background-position:0 -1955px;} 
+.Lebanon{background-position:0 -1972px;} 
+.Lesotho{background-position:0 -1989px;} 
+.Liberia{background-position:-17px 0;} 
+.Libya{background-position:-17px -17px;} 
+.Liechtenstein{background-position:-17px -34px;} 
+.Lithuania{background-position:-17px -51px;} 
+.Luxembourg{background-position:-17px -68px;} 
+.Macao{background-position:-17px -85px;} 
+.Macedonia{background-position:-17px -102px;} 
+.Madagascar{background-position:-17px -119px;} 
+.Malawi{background-position:-17px -136px;} 
+.Malaysia, .myr{background-position:-17px -153px;} 
+.Maldives{background-position:-17px -170px;} 
+.Mali{background-position:-17px -187px;} 
+.Malta{background-position:-17px -204px;} 
+.MarshallIslands{background-position:-17px -221px;} 
+.Martinique{background-position:-17px -238px;} 
+.Mauritania{background-position:-17px -255px;} 
+.Mauritius{background-position:-17px -272px;} 
+.Mexico, .mxn{background-position:-17px -289px;} 
+.Micronesia{background-position:-17px -306px;} 
+.Moldova{background-position:-17px -323px;} 
+.Monaco{background-position:-17px -340px;} 
+.Mongolia{background-position:-17px -357px;} 
+.Montenegro{background-position:-17px -374px;} 
+.Montserrat{background-position:-17px -391px;} 
+.Morocco{background-position:-17px -408px;} 
+.Mozambique{background-position:-17px -425px;} 
+.MyanmarBurma{background-position:-17px -442px;} 
+.NATO{background-position:-17px -459px;} 
+.Namibia{background-position:-17px -476px;} 
+.Nauru{background-position:-17px -493px;} 
+.Nepal{background-position:-17px -510px;} 
+.Netherlands{background-position:-17px -527px;} 
+.Netherlands_Antilles{background-position:-17px -544px;} 
+.New_Zealand, .nzl, .nzd{background-position:-17px -561px;} 
+.Nicaragua{background-position:-17px -578px;} 
+.Niger{background-position:-17px -595px;} 
+.Nigeria{background-position:-17px -612px;} 
+.NorthKorea{background-position:-17px -629px;} 
+.NorthernIreland{background-position:-17px -646px;} 
+.Northern_Cyprus{background-position:-17px -663px;} 
+.Norway, .nok{background-position:-17px -680px;} 
+.OPEC{background-position:-17px -697px;} 
+.OlimpicMovement{background-position:-17px -714px;} 
+.Oman{background-position:-17px -731px;} 
+.Pakistan{background-position:-17px -748px;} 
+.Palau{background-position:-17px -765px;} 
+.Palestine, .Palestinian_Territory {background-position:-17px -782px;} 
+.Panama{background-position:-17px -799px;} 
+.Papua_New_Guinea{background-position:-17px -816px;} 
+.Paraguay{background-position:-17px -833px;} 
+.Peru, .pen{background-position:-17px -850px;} 
+.Philippines, .php{background-position:-17px -867px;} 
+.Poland, .pln{background-position:-17px -884px;} 
+.Portugal{background-position:-17px -901px;} 
+.PuertoRico{background-position:-17px -918px;} 
+.Qatar{background-position:-17px -935px;} 
+.RedCross{background-position:-17px -952px;} 
+.Reunion{background-position:-17px -969px;} 
+.Romania{background-position:-17px -986px;} 
+.Russian_Federation, .rub{background-position:-17px -1003px;} 
+.Rwanda{background-position:-17px -1020px;} 
+.SaintLucia{background-position:-17px -1037px;} 
+.Samoa{background-position:-17px -1054px;} 
+.SanMarino{background-position:-17px -1071px;} 
+.Sao_Tome_Principe{background-position:-17px -1088px;} 
+.Saudi_Arabia{background-position:-17px -1105px;} 
+.Scotland{background-position:-17px -1122px;} 
+.Senegal{background-position:-17px -1139px;} 
+.Serbia{background-position:-17px -1156px;} 
+.Seychelles{background-position:-17px -1173px;} 
+.SierraLeone{background-position:-17px -1190px;} 
+.Singapore, .sgd{background-position:-17px -1207px;} 
+.Slovakia{background-position:-17px -1224px;} 
+.Slovenia{background-position:-17px -1241px;} 
+.Solomon_Islands{background-position:-17px -1258px;} 
+.Somalia{background-position:-17px -1275px;} 
+.Somaliland{background-position:-17px -1292px;} 
+.South_Afriica, .South_Africa, .zar{background-position:-17px -1309px;}
+.South_Korea, .krw{background-position:-17px -1326px;} 
+.Spain{background-position:-17px -1343px;} 
+.Sri_Lanka{background-position:-17px -1360px;} 
+.StKittsNevis{background-position:-17px -1377px;} 
+.StVincenttheGrenadines{background-position:-17px -1394px;} 
+.Sudan{background-position:-17px -1411px;} 
+.Suriname{background-position:-17px -1428px;} 
+.Swaziland{background-position:-17px -1445px;} 
+.Sweden, .sek{background-position:-17px -1462px;} 
+.Switzerland, .che, .chf{background-position:-17px -1479px;} 
+.Syria{background-position:-17px -1496px;} 
+.TahitiFrenchPolinesia{background-position:-17px -1513px;} 
+/*.Taiwan, .twd{background-position:-17px -1530px;} */
+.Taiwan, .twd{background-position: -17px -2005px;}
+.Tajikistan{background-position:-17px -1547px;}
+.Tanzania{background-position:-17px -1564px;} 
+.Thailand, .thb{background-position:-17px -1581px;} 
+.Timor-Leste{background-position:-17px -1598px;} 
+.Togo{background-position:-17px -1615px;} 
+.Tonga{background-position:-17px -1632px;} 
+.Trinidad_Tobago{background-position:-17px -1649px;} 
+.Tunisia{background-position:-17px -1666px;} 
+.Turkey, .try{background-position:-17px -1683px;} 
+.Turkmenistan{background-position:-17px -1700px;} 
+.TurksandCaicosIslands{background-position:-17px -1717px;} 
+.Tuvalu{background-position:-17px -1734px;}
+.USA, .USD, .usa, .usd, .United_States {background-position:-17px -1751px;}
+.Uganda{background-position:-17px -1768px;} 
+.Ukraine, .uah{background-position:-17px -1785px;} 
+.UnitedNations{background-position:-17px -1802px;} 
+.United_Arab_Emirates{background-position:-17px -1819px;}
+.UK, .United_Kingdom, .gbr, .gbp{background-position:-17px -1836px;}
+.Uruguay{background-position:-17px -1853px;} 
+.Uzbekistan{background-position:-17px -1870px;} 
+.Vanuatu{background-position:-17px -1887px;} 
+.VaticanCity{background-position:-17px -1904px;} 
+.Venezuela, .vef{background-position:-17px -1921px;} 
+.Viet_Nam, .vnd, .Vietnam{background-position:-17px -1938px;} 
+.VirginIslandsBritish, .British_Virgin_Islands{background-position:-17px -1955px;} 
+.VirginIslandsUS, .Virgin_Islands_US{background-position:-17px -1972px;} 
+.Wales{background-position:-17px -1989px;} 
+.WesternSahara{background-position:-34px 0;} 
+.Yemen{background-position:-34px -17px;} 
+.Zambia{background-position:-34px -34px;} 
+.Zimbabwe{background-position:-34px -51px;} 
+/* Flags */
+
+.poweredBy {font-size:11px; margin-top:9px;}
+
+.tabsForBox {height:21px; line-height:21px; padding:0; margin:0; text-align:left;}
+.tabsForBox LI {float:left; height:21px; *height:22px; padding:0; list-style:none;}
+.tabsForBox LI A {font-weight:bold; margin:0; padding:0 11px; height:14px; line-height:14px; display:inline-block; border-right:1px solid #DADADA;}
+.tabsForBox LI.selected {margin:-2px -1px 0 -1px; *margin:-8px -1px 0 -1px; background:none;}
+.tabsForBox LI.selected A {cursor:default;}
+.tabsForBox LI.selected A:hover {cursor:default; text-decoration:none;}
+.tabsForBox LI.selected.first {margin:-2px -1px 0 0; *margin:-8px -1px 0 0; background:none;}
+.tabsForBox LI.selected.first A {padding-left:13px;}
+.tabsForBox LI.first A {padding-left:14px;background:none;}
+.tabsForBox LI.last A {border:none;}
+.tabsForBox LI.selected A {margin:0 1px; background-color:#fff; border:1px solid #BABABA; border-top:2px solid #20538A; border-bottom:none; color:#333333; height:22px; *height:28px; line-height:21px; *line-height:25px;  position:relative; width:auto; margin:0;}
+.tabsForBox LI DIV {background-position:-35px -64px; height:9px; width:5px; margin:-24px 0 0 46px; padding:3px; position:relative; cursor:pointer;}
+
+/* GENERAL TABLE */
+TABLE.genTable {border-spacing:0; border-collapse:separate !important;}
+TABLE.collapsedTable {border-collapse:collapse !important;}
+
+.genTable TH {color:#333333; font-weight:bold; text-align:right; height:24px;}
+.genTable TD {border-top:1px solid #DADADA; height:23px; height/*\**/:22px\9; *height:22px; text-align:right; vertical-align:middle; padding-left:5px;}
+.genTable TR:first-child TD {border-top:2px solid #BABABA;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .genTable TD {height:22px;} /* WEBKIT */
+}
+
+.genTable .left {text-align:left;}
+.genTable .right {text-align:right;}
+.genTable .center {text-align:center;}
+.genTable .textNum {padding-left:10px;}
+.genTable TD:first-child {font-weight:bold;}
+.genTable .sideColumn {width:11px; border:0;}
+.genTable .icon {width:26px; text-align:center;}
+.genTable .flag {width:35px; padding-left:3px; text-align:center;}
+.genTable .last TD {border-bottom:none;}
+.genTable .timeSeparator TD {border-top:2px solid #DADADA;}
+/* /GENERAL TABLE */
+
+/* OPEN TABLE */
+.openTable TH {padding-top:5px;}
+.openTable TR:first-child TD {padding-top:4px; height:27px; height/*\**/:21px\9;}
+
+/* CLOSED TABLE */
+TABLE.closedTable {border:1px solid #BABABA; border-bottom:2px solid #BABABA;}
+TABLE.closedTable TBODY TR:hover {background-color:#EDF4FA;}
+TABLE.closedTable TBODY TR.noHover:hover {background-color:#FFFFFF;}
+TABLE.closedTable .last TD {border-bottom:none;}
+/* /CLOSED TABLE */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .openTable TR:first-child TD {height:21px;} /* WEBKIT */
+}
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
+    .openTable TR:first-child TD {height:27px;} /* OPERA */
+}
+/* /OPEN TABLE */
+
+.studySummaryOval {color:#FFFFFF; padding:2px 12px; -moz-border-radius:9px; -ms-border-radius:9px; -o-border-radius:9px; -webkit-border-radius:9px; border-radius:9px; margin:-2px 3px -3px; text-transform:uppercase;}
+.studySummaryOval.buy {background-color:#00994d;}
+.studySummaryOval.sell {background-color:#D94141;}
+.studySummaryOval.neutral {background-color:#999999;}
+
+.toolIframeBox {margin-top:14px;}
+.logo {width:137px; height:25px; border:0;}
+
+.showMoreReplies {background-color:#fff; border:1px solid #d3d3d3; height:17px; line-height:17px; margin:11px 0 20px 42px; display:block; cursor:pointer;}
+.showMoreReplies:hover {background-color:#f7f7f7; border:1px solid #d9d9d9;}
+.showMoreReplies:active .showArrowafter {color:#92b6d5}
+
+/* HOVER ROWS TABLE LIKE */
+.hoverRows {padding:0; margin:0; width:298px;}
+.hoverRows A {font-weight:bold;}
+.hoverRows I {font-style:normal; display:inline-block; *display:inline; zoom:1; padding:0; margin:0;}
+.hoverRows .row I {border-bottom:1px solid #dadada; height:21px; line-height:21px; text-align:right;}
+.hoverRows .row .first {text-align:left;}
+.hoverRows .sideColumn {width:11px; border:0 none !important;}
+.hoverRows .lastRow I {border:0;}
+.hoverRows .row:hover {background-color:#edf4fa; height:21px; margin-top:-1px; border-top:1px solid #dadada; border-bottom:1px solid #dadada;}
+.hoverRows .lastRow I{height:22px;}
+/* /HOVER ROWS TABLE LIKE */
+
+/* HOVERS BOX - genenral */
+.hoverboxWithShadow {padding:5px; background-color:#999; background:none repeat scroll 0 0 rgba(0, 0, 0, 0.4); -moz-border-radius:3px; -ms-border-radius:3px; -o-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; z-index:9999;}
+.hoverboxWithShadow .arrow {bottom:auto; height:12px; left:50%; margin-left:-11px; top:-7px; width:22px; position:absolute;}
+/* /HOVERS BOX - genenral */
+
+
+/***** BUTTONS *****/
+.newBtn {position:relative; display:inline-block; *display:inline; *zoom:1; outline:0; padding:3px 10px 4px 31px; font-size:11px; line-height:14px; font-weight:bold;	before: " "; after: " ";}
+.newBtn:hover {text-decoration:none;}
+.newBtn:before, .newBtn .before, .newBtn.blueDropDownArrow:after, .newBtn.blueDropDownArrow .after {background-image:URL('https://i-invdn-com.investing.com/newSiteIconsSprite_v28.png'); content: ""; display: block; position: absolute; top: 0;left: 0;}
+.newBtn:after, .newBtn .after {position:absolute; content:""; border-width:0 1px 1px; border-style:solid; width:100%; bottom:-2px; left:-1px;}
+.newBtn.LightGray {color:#333333; background:-o-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-ms-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-moz-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-webkit-gradient(linear, left top, left bottom, from(#f6f6f6),to(#e4e4e4)); filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#f6f6f6,endColorstr=#e4e4e4,GradientType=0); zoom:1; border:1px solid #8c8c8c; box-shadow:inset 0px 0px 0px 1px #EBEBEB; -moz-box-shadow:inset 0px 0px 0px 1px #EBEBEB; -webkit-box-shadow:inset 0px 0px 0px 1px #EBEBEB;}
+.newBtn.LightGray:hover {background:-o-linear-gradient(top,#ededed 0%,#d6d6d6); background:-ms-linear-gradient(top,#ededed 0%,#d6d6d6); background:-moz-linear-gradient(top,#ededed 0%,#d6d6d6); background:-webkit-gradient(linear, left top, left bottom, from(#ededed),to(#d6d6d6));	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#ededed,endColorstr=#d6d6d6,GradientType=0); zoom:1; box-shadow:inset 0px 0px 0px 1px #F7F7F7; -moz-box-shadow:inset 0px 0px 0px 1px #F7F7F7; -webkit-box-shadow:inset 0px 0px 0px 1px #F7F7F7;}
+.newBtn.LightGray:active {background:-o-linear-gradient(top,#e6e6e6 0%,#dadada); background:-ms-linear-gradient(top,#e6e6e6 0%,#dadada); background:-moz-linear-gradient(top,#e6e6e6 0%,#dadada); background:-webkit-gradient(linear, left top, left bottom, from(#e6e6e6),to(#dadada)); filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#e6e6e6,endColorstr=#dadada,GradientType=0); zoom:1; box-shadow:inset 0px 0px 0px 1px #E3E3E3; -moz-box-shadow:inset 0px 0px 0px 1px #E3E3E3; -webkit-box-shadow:inset 0px 0px 0px 1px #E3E3E3;}
+.newBtn.LightGray:before, .newBtn.lGray .before {box-shadow:inset -1px 0px 0px 0px #F8F8F8;}
+.newBtn.LightGray:after, .newBtn.lGray .after {border-color:#E3E3E3;}
+.newBtn.LightGray:active:after, .newBtn.lGray:active .after {border:0;}
+
+.newBtn.Arrow:before, .newBtn.Arrow .before {background-position:-15px -177px; height:17px; width:22px; margin:2px 0 0px 1px; border-right:1px solid #8C8C8C;}
+/***** /BUTTONS *****/
+
+/***** LEGEND *****/
+.ecoCalLegend {
+  border: 1px solid #DADADA;
+  border-top:0;
+  padding:20px 15px;
+  width:calc(100% - 32px);
+  display:inline-block;
+}
+.ecoCalLegend DL, .ecoCalLegend UL {
+	float:left;
+}
+.ecoCalLegend UL {padding-left:13px;}
+
+.ecoCalLegend DT, .ecoCalLegend DD, .ecoCalLegend LI {
+  line-height: 21px; }
+.ecoCalLegend LI SPAN {
+	margin-left:8px;
+}
+.ecoCalLegendTitle {
+  height: 25px; }
+
+.ecoCalLegend_1 {
+  border-right: 1px solid #DADADA; 
+  padding-right: 10px;
+  }
+
+.ecoCalLegend_1 DT {
+  width: 17px;
+  margin-right: 10px; }
+
+.ecoCalLegend_1 DD {
+  width: 194px;
+  font-size: 12px;
+}
+
+HTML.com .ecoCalLegend_1 DD,
+HTML.fr .ecoCalLegend_1 DD,
+HTML.ru .ecoCalLegend_1 DD,
+HTML.trcom .ecoCalLegend_1 DD,
+HTML.nl .ecoCalLegend_1 DD {
+	width:180px;
+}
+HTML.es .ecoCalLegend_1 DD {
+	width:170px;
+}
+HTML.de .ecoCalLegend_1 DD {
+	width:192px;
+}
+HTML[lang="sv"] .ecoCalLegend_1 DD {
+	width:194px;
+}
+HTML[lang="fi-FI"] .ecoCalLegend_1 DD,
+HTML.mx .ecoCalLegend_1 DD {
+	width:165px;
+}
+
+.ecoCalLegend_2 {
+  padding-left:10px;
+}
+
+.ecoCalLegend_2 DT {
+  width: 17px;
+  margin-right: 8px; }
+
+.ecoCalLegend_2 DD {
+  width: 153px;
+  font-size: 12px; }
+
+.ecoCalLegend_3 {
+  border-left: 1px solid #DADADA;
+    font-size: 12px;}
+
+.ecoCalLegend_1, .ecoCalLegend_2, .ecoCalLegend_3 {
+  margin-top: 7px; }
+.ecoCalLegend I.grayFullBullishIcon,
+.ecoCalLegend I.grayEmptyBullishIcon {
+	margin-right:4px;
+}
+/***** /LEGEND *****/
+
+.topBanner {
+	text-align:center;
+	margin-bottom:10px;
+}
+
+
+</style>
+<style>
+.newSiteIconsSprite {
+	background-image: url('https://i-invdn-com.investing.com/newSiteIconsSprite_v30i.png');
+}
+.greenAndroidIcon {
+	background-position:-95px -1337px;
+	width:15px;
+	height:19px;
+	display:inline-block;
+}
+.greyAppleLogo {
+	background-position:-94px -1464px;
+	width: 15px;
+	height: 17px;
+	display:inline-block;
+}
+.downloadApp {
+	margin-left:5px;
+	position:relative;
+	top:-3px;
+}
+.downloadApp + .downloadApp {
+	margin-left:7px;
+	padding-left:5px;
+	border-left:1px solid #dadada;
+	height:16px;
+	line-height:0;
+}
+.wmtTooltip {
+	display:none;
+	padding:5px 8px 5px 7px;
+	background-color:#333;
+	color:#fff;
+	line-height:normal;
+	position:absolute;
+	top:31px;
+	left:-5px;
+	z-index:1;
+	white-space:nowrap;
+	font-weight:bold;
+}
+.wmtTooltip:before {
+	content:"";
+	border-style:solid;
+	border-color:transparent transparent #333 transparent;
+	border-width:0 6px 6px 6px;
+	left:7px;
+	top:-6px;
+	position:absolute;
+	display:block;
+}/* tooltip triangle */
+.downloadApp:hover .wmtTooltip {
+	display:block;
+}
+.downloadApp + .downloadApp .wmtTooltip {
+	left:-1px;
+	top:29px;
+}
+/* Time Zone Setting */
+.ecoTimeAndText {
+	/*margin-top:15px;*/
+	position:relative;
+}
+IFRAME + .ecoTimeAndText {
+			margin-right:20px;
+	}
+.ecoCurrentTime {
+	border:1px solid #fff;
+	position:relative;
+	margin:2px;
+	white-space:nowrap;
+			padding:2px 0 2px 5px;
+	}
+.ecoCurrentTime:hover {
+	border:1px solid #a6a6a6;
+	cursor:pointer;
+	background:-o-linear-gradient(top, #ffffff 0%, #f5f5f5);
+	background:-ms-linear-gradient(top, #ffffff 0%, #f5f5f5);
+	background:-moz-linear-gradient(top, #ffffff 0%, #f5f5f5);
+	background:-webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f5f5));
+filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#ffffff, endColorstr=#f5f5f5, GradientType=0);
+}
+.ecoCurrentTimePop {
+    position: absolute;
+    z-index: 1;
+    top: 28px;
+    left: -108px;
+}
+.ecoCurrentTimePop UL {
+    background-color: #fff;
+    height: 265px;
+    overflow-y: scroll;
+    padding: 7px 0;
+    border: 1px solid #595959;
+}
+.ecoCurrentTimePop LI {
+    color:$default-font-color;
+    padding: 0 7px;
+}
+.ecoCurrentTimePop LI:hover {
+    background-color: #e8f2fa;
+    cursor: pointer;
+}
+.ecoAutoUpdateText {
+	padding:2px 4px;
+}
+.doubleArrowLink{
+	height: 7px;
+	width: 8px;
+	vertical-align: middle;
+	background-image: URL("https://i-invdn-com.investing.com/newSiteIconsSprite_v34o.png");
+	background-position: -35px -462px;
+	display: inline-block;
+	margin: 0 0 0 5px;
+}
+.doubleArrowLinkRtl{
+	background-position: -50px -462px;
+}
+.eCalNew a{
+	color: #333;
+}
+H2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 13px 0;
+}
+.inlineBlock{
+	display: inline-block;
+}
+.ecoTimeAndDate {
+	position:relative;
+	margin-top: 36px;
+}
+.ecoTimeAndText .arrow {
+	background-position:-51px -339px;
+	padding:3px 12px;
+	position:absolute;
+	top:-11px;
+	left:143px;
+	z-index:1;
+	line-height:1px;
+}
+.ecoCurrentTimePop UL {
+	background-color:#fff;
+	height:265px;
+	overflow-y:scroll;
+	padding:7px 0;
+	border:1px solid #595959;
+}
+.ecoCurrentTimePop LI {
+	color:#333;
+	padding:0 7px;
+}
+.ecoCurrentTimePop LI:hover {
+	background-color:#e8f2fa;
+	cursor:pointer;
+}
+/* /Time Setting */
+
+      .ecoTimeAndDate .arrow {
+	background-position:-51px -339px;
+	padding:3px 12px;
+	position:absolute;
+	top:-11px;
+	left:38px;
+	z-index:1;
+	line-height:1px;
+}
+.ecoCalTable {
+color:#333333;
+	width:100%; /*max-width:636px;*/
+	min-width:440px
+}
+.eCalNew TABLE.ecoCalTable {
+	margin-top:12px;
+*border-collapse:collapse !important;
+}
+.eCalNew HEADER+TABLE.ecoCalTable {
+	margin-top:27px;
+}
+.eCalMain TABLE.ecoCalTable TH, .eCalMain TABLE.ecoCalTable TD {
+	text-align:right;
+}
+.eCalMain TABLE.ecoCalTable TH.time, .eCalMain TABLE.ecoCalTable TD.time {
+	white-space: nowrap;
+}
+.eCalMain TABLE.ecoCalTable TH.time, .eCalMain TABLE.ecoCalTable TD.time, .eCalMain TABLE.ecoCalTable TD.center {
+	/*padding:0;*/
+	text-align:center;
+}
+.eCalMain TABLE.ecoCalTable TH.flagCur, .eCalMain TABLE.ecoCalTable TD.flagCur {
+	padding-left:11px;
+	white-space:nowrap;
+	text-align:left;
+}
+.eCalMain .ceFlags {
+	margin-right:3px;
+}
+.eCalMain TABLE.ecoCalTable TH.sentiment, .eCalMain TABLE.ecoCalTable TD.sentiment {
+	white-space:nowrap;
+	padding-left:5px;
+	text-align:left;
+}
+.eCalMain TABLE.ecoCalTable TH.event, .eCalMain TABLE.ecoCalTable TD.event {
+	line-height:19px;
+	padding:2px 0 2px 10px;
+	text-align:left;
+}
+.eCalMain .act, .eCalMain .fore, .eCalMain .prev {
+	padding-left:5px;
+	direction:ltr;
+}
+.eCalMain .act, .eCalMain .fore {
+	padding:0 5px;
+}
+.eCalMain .diamond {
+	width:7px;
+	padding:0 10px;
+}
+.eCalMain .noHover TD {
+	padding:0;
+}
+.eCalMain .noHover TD DIV.eventDetailWrap {
+	width:99%;
+}
+/*.eCalNew .ecoCalTable.genTable TH {text-align:center;}*/
+	  .eCalNew .ecoCalTable.genTable TD {
+	height:25px;
+}
+.eCalNew .ecoCalTable.genTable TD.event {
+	height:21px;
+}
+.eCalNew .ecoCalTable.genTable TD:first-child {
+	font-weight:normal;
+}
+.eCalMain TABLE.ecoCalTable .theDay {
+	text-align:center;
+background-color:#B2B2B2;
+	border-top:0;
+	height:17px !important;
+	line-height:17px;
+color:#FFFFFF;
+	font-weight:bold !important;
+	cursor:default;
+}
+.eCalNew .passedTime {
+	background-color:#ffffe5;
+}
+.eCalNew .mainEcoAd {
+	background-color:#f2f2f2;
+	height:50px;
+	padding:1px 11px 11px;
+}
+.eCalNew .advertisement {
+	background-color:#f2f2f2;
+	height:58px;
+	padding:0 10px 10px;
+}
+.eCalNew .mainEcoAd .advText, .eCalNew .advertisement .advText {
+	margin-left:14px;
+	max-width:429px;
+}
+.eCalMain .ecoCalTabs {
+	margin-top:26px;
+	border-bottom:1px solid #BABABA;
+}
+.eCalMain .ecoCalTabs .clear {
+*height:0;
+}
+.eCalMain .socialWidgets {
+	margin-top:-8px;
+}
+.eCalMain .tabsForBoxBottomReg {
+	border:0;
+	padding:0;
+}
+.eCalMain .buttonLine {
+	margin-top:26px;
+}
+.eCalMain .infoBox .advertisement .advText {
+	margin-left:14px;
+	max-width:393px;
+}
+.eCalMain .infoBox .ceFlags {
+	margin-right:0;
+}
+.eCalMain .infoBox {
+	padding:15px 15px 25px;
+}
+.eCalMain .infoBox .title {
+	margin-top:20px;
+	font-size:18px;
+	font-weight:bold;
+}
+.eCalMain .infoBox .tabsForBox {
+	margin-top:37px;
+border-bottom:1px solid #BABABA;
+}
+.eCalMain .infoBox .tabsForBoxBottomReg {
+	width:auto;
+	height:26px;
+	border-bottom:0;
+}
+.eCalMain .realData {
+	margin:23px 26px 0 0;
+	padding:4px 10px 7px;
+border:1px solid #DADADA;
+}
+.eCalMain .realData I {
+	margin:0 0 3px 3px;
+*margin:0 0 -13px;
+}
+.eCalMain .realDataTable DIV {
+	margin:6px 0 0 6px;
+	width:161px;
+}
+.eCalMain .realDataTable DIV:first-child {
+	margin-top:4px;
+	height:20px;
+}
+.eCalMain .realDataTable DIV.previous {
+	margin-top:1px;
+}
+.eCalMain .details {
+	margin:23px 0 0;
+	width:316px;
+	vertical-align:middle;
+}
+.eCalMain .details DL {
+	margin-top:9px;
+}
+.eCalMain .details DT, .eCalMain .details DD {
+	float:left;
+	padding:3px 0;
+	margin:2px 0;
+}
+.eCalMain .details DT {
+	width:114px;
+}
+.eCalMain .details DD {
+	width:202px;
+}
+.genTable.ecoCalTable TBODY TR {
+	cursor:pointer;
+}
+.genTable.ecoCalTable TR.noHover TD {
+	border-top:1px solid #dfe9f2;
+border-bottom:1px solid #BABABA;
+	cursor:default;
+}
+.eCalMain .openedTr TD {
+	background-color:#dfe9f2;
+border-top:1px solid #BABABA;
+}
+ .eCalMain .timeSeparator TD, {
+border-top:2px solid #DADADA;
+}
+.eCalMain .eventOverview {
+	width:550px;
+}
+.eCalMain .showMoreReplies {
+	margin:12px 0 3px;
+}
+.genTable.ecoCalTable .ecHistoryTable TR {
+	cursor:default;
+}
+.genTable.ecoCalTable TR.noHover .ecHistoryTable TD {
+	border-bottom:none;
+}
+.eCalMain .ecHistoryTable {
+	width:100%;
+}
+.eCalMain .ecHistoryTable TR:hover {
+	background-color:#fff;
+}
+/*.eCalMain .ecHistoryTable.genTable TH:first-child {text-align:left;}*/
+.eCalMain .ecHistoryTable.genTable TD:first-child {
+	font-weight:bold;
+}
+.eCalMain .ecHistoryTable.genTable TH {
+	padding:0;
+}
+.eCalMain .ecHistoryTable.genTable TH.symbol {
+	width:55%;
+}
+.eCalMain .ecHistoryTable.genTable TH.act {
+	width:15%;
+}
+.eCalMain .ecHistoryTable.genTable TH.for {
+	width:15%;
+}
+.eCalMain .ecHistoryTable.genTable TH.pre {
+	width:15%;
+}
+.eCalMain .ecHistoryTable.genTable TH.diamond {
+	width:11px;
+}
+.eCalMain .ecHistoryTable.genTable TR:first-child TD {
+border-top:2px solid #BABABA !important;
+}
+.eCalMain .ecHistoryTable.genTable TD {
+	height:21px;
+}
+.eCalMain .ecHistoryTable.genTable .left {
+	text-align: left;
+}
+.eCalMain .ecHistoryTable TD {
+	padding:0;
+}
+
+.eCalMain TABLE.ecoCalTable TD.center.noResults {
+	padding: 10px 0 12px;
+}
+
+.eCalMain TABLE.ecoCalTable TR:hover TD.center.noResults {
+	pointer:default;
+	background-color:white;
+}
+
+.genTable.ecHistoryTable TD {
+border-top:1px solid #DADADA !important;
+}
+.grayFullBullishIcon {
+    background-position: -5px -1077px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.grayEmptyBullishIcon {
+    background-position: -5px -1059px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+.whiteEmptyBullishIcon {
+    background-position: -62px -1095px;
+    width: 15px;
+    height: 13px;
+    display: inline-block;
+}
+.eCalNew .genTable.ecoCalTable TR:hover .grayEmptyBullishIcon, .eCalNew .genTable.ecoCalTable TR.openedTr .grayEmptyBullishIcon {
+	background-position:-62px -1095px;
+}
+.eCalNew .genTable.ecoCalTable TR:hover .infoBox .grayEmptyBullishIcon {
+	background-position:-4px -1057px;
+}
+.ecoCalTable .grayFullBullishIcon, .ecoCalTable .grayEmptyBullishIcon {
+	margin: 0 3px 3px 0;
+}
+.datePickerWrap .datePickerIconWrap {
+	background-position:-68px -715px;
+	width:15px;
+	height:21px;
+	float:right;
+	padding:0 5px;
+	border-left:1px solid #8C8C8C;
+	background:-o-linear-gradient(top, #f9f9f9 0%, #e4e4e4);
+	background:-ms-linear-gradient(top, #f9f9f9 0%, #e4e4e4);
+	background:-moz-linear-gradient(top, #f9f9f9 0%, #e4e4e4);
+	background:-webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e4e4e4));
+filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#f9f9f9, endColorstr=#e4e4e4, GradientType=0);
+	zoom:1;
+}
+/* Economic Calendar Event Chart Tooltip */
+	  .ec-highchart {
+	height: 240px;
+	direction:ltr;
+	text-align:center;
+}
+.ec-highchart .highcharts-tooltip {
+	z-index:9999 !important;
+}
+.ec-highchart .highcharts-tooltip span {
+	color:#4d4d4d;
+	background-color:#f2f2f2;
+	white-space:normal !important;
+}
+.ec-highchart .highcharts-tooltip .event-tooltip-container {
+	white-space:nowrap;
+	min-width:84px;
+	margin:5px 8px !important;
+}
+.ec-highchart .highcharts-tooltip .event-tooltip-container td {
+	border: none !important;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	height: auto !important;
+	text-align: left;
+}
+.ec-highchart .highcharts-tooltip .event-title, .ec-highchart .highcharts-tooltip .event-title-actual {
+	padding: 0 7px 0 0;
+}
+.ec-highchart .highcharts-tooltip .event-title-actual, .ec-highchart .highcharts-tooltip .event-value-actual-up, .ec-highchart .highcharts-tooltip .event-value-actual-down, .ec-highchart .highcharts-tooltip .event-value-actual-neutral {
+	font-size: 12px;
+	font-weight: bold !important;
+}
+.ec-highchart .highcharts-tooltip .event-value-actual-up {
+	color: green;
+}
+.ec-highchart .highcharts-tooltip .event-value-actual-down {
+	color: red;
+}
+ @media (max-width: 570px) {
+.eCalMain .ceFlags {
+	display:block;
+	margin-left:4px;
+}
+.eCalMain .realData, .eCalMain .details {
+	float:none;
+}
+.eCalMain .eventOverview {
+	width:400px;
+}
+}
+ @media (max-width: 445px) {
+.sentiment, .imp {
+	display:none;
+}
+}
+.loading-responsive {
+	height:36px;
+	width:36px;
+	margin:0 auto;
+	background-image:url('https://i-invdn-com.investing.com/loading_circle.gif');
+	background-repeat:no-repeat;
+	background-position:center;
+	text-indent:-9999px;
+}
+.loading-responsive.medium-circle {
+	background-image:url('https://i-invdn-com.investing.com/ajax-loader-big.gif');
+}
+HEADER {
+	background:rgba(255,255,255,0.95);
+	height:29px;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+HEADER.floating {
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.25);
+	box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.25);
+}
+
+.newBtn.toggleButton {
+	border-right: none;
+	padding: 3px 10px 4px;
+}
+.ecoButtonLine .toggleButton.last {
+	margin-right: 13px;
+}
+.newBtn.toggleButton.last {
+	border-right: 1px solid #8C8C8C;
+}
+.newBtn.toggleButton.toggled {
+	color: #FFF;
+	cursor: default;
+	-moz-box-shadow: inset 0 1px 2px #808080;
+	-webkit-box-shadow: inset 0 1px 2px #808080;
+	box-shadow: inset 0 1px 2px #808080;
+	background: none;
+	background-color: #999;
+	filter: none;
+}
+.newBtn.filter {
+	padding: 3px 6px 4px 31px;
+}
+.filtersOffLight, .filtersOnLight {
+	margin-left: 8px;
+}
+.filtersOffLight {
+	background-image: URL("https://i-invdn-com.investing.com/newSiteIconsSprite_v30e.png");
+	background-position: -139px -229px;
+	display: inline-block;
+	width: 10px;
+	height: 11px;
+	padding: 0;
+}
+.filtersOnLight {
+	background-image: URL("https://i-invdn-com.investing.com/newSiteIconsSprite_v30e.png");
+	background-position: -139px -216px;
+	display: inline-block;
+	width: 10px;
+	height: 11px;
+	padding: 0;
+}
+.newBtn.LightGray:after, .newBtn.lGray .after {
+	border-color: #E3E3E3;
+}
+.newBtn:after, .newBtn .after {
+	position: absolute;
+	content: "";
+	border-width: 0 1px 1px;
+	border-style: solid;
+	width: 100%;
+	bottom: -2px;
+	left: -1px;
+}
+
+.newBtn.filter:before, .newBtn.filter .before {
+	background-position: -130px -199px;
+	height: 17px;
+	width: 22px;
+	margin: 2px 0 0px 1px;
+	border-right: 1px solid #8C8C8C;
+}
+.ecoFilterBox {
+	background-color: #F2F2F2;
+	border-top: 1px solid #FFF;
+	padding: 17px;
+	position:relative;
+	min-width:420px;
+}
+.ecoSearchBox {
+	background-color: #F2F2F2;
+	padding: 18px 0;
+	position: relative;
+}
+.ecoFilterBox .right .countryOption INPUT {
+	vertical-align: top;
+}
+.ecoFilterBox .right .countryOption .countryName {
+	vertical-align: top;
+	max-width: 110px;
+	margin-left: 6px;
+	display: inline-block;
+}
+.eCalMainNew .arrowIndicator {
+	width: 23px;
+	height: 16px;
+	padding: 0;
+	margin-left: 38px;
+}
+.bugCloseIcon {
+	background-image: URL("https://i-invdn-com.investing.com/newSiteIconsSprite_v30e.png");
+	background-position: -32px -386px;
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	cursor: pointer;
+}
+.bugCloseIcon:hover {
+	background-position: -32px -401px;
+	text-decoration: none;
+}
+.ecoSearchBox .bugCloseIcon {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+.ecoFilterBox .left {
+	display:table-cell;
+	width:83px;
+}
+.ecoFilterBox .left P {
+	margin-bottom: 9px;
+	margin-top: -1px;
+}
+.ecoFilterBox .right {
+	display:table-cell;
+	vertical-align:top;
+}
+.ecoFilterBox .right LI {
+	width: 163px;
+	padding-left: 10px;
+	margin-bottom:5px;
+	float: left;
+}
+.ecoFilterBox .right .ceFlags {
+	margin-left: 4px;
+	vertical-align: top;
+	line-height: 13px;
+	display: inline-block;
+}
+.ecoFilterBox .right LABEL {
+	width: 120px;
+	display: inline-block;
+	padding-left: 7px;
+	line-height: 13px;
+}
+.ecoFilterBox .right LABEL I:first-child {
+	margin-left: 0;
+}
+.ecoFilterBox .right LABEL I {
+	margin-left: 3px;
+}
+.ecoFilterBox .right .countryOption LABEL {vertical-align:middle; width:auto; padding-left:0;}
+.ecoFilterBox .right fieldset {padding-left: 10px; margin-bottom: 6px;}
+.ecoFilterBox .right fieldset LABEL {margin-top: 2px; width: auto;}
+.arrowIndicator {
+	background-image: URL("https://i-invdn-com.investing.com/newSiteIconsSprite_v30e.png");
+	background-position: 0 -424px;
+	display: block;
+	width: 22px;
+	height: 14px;
+}
+.eCalMainNew .arrowIndicator {
+	width: 23px;
+	height: 16px;
+	padding: 0;
+	margin-left: 38px;
+}
+.dateBtns LI {
+	float:left;
+}
+HEADER, .ecoTimeAndDate {min-width:380px;}
+.searchText {background: none; height: 20px; padding: 0 7px 0 6px; margin: 0; color: #969796; border: none;}
+.combineSearchBox .searchText {width: 250px; font-size: 11px;}
+.newInput {border: 1px solid #737373; resize: none; font-size: 12px; font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;}
+.combineSearchBox {color: inherit; background: none; width: 286px; height: 20px; border: 1px solid #0D416F; margin: 0; position: relative; z-index: 301;}
+.combineSearchBox {border: 1px solid #737373;}
+.newInput:hover {-webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.15);}
+.newInput.inputTextBox {height: 21px; padding: 0 5px;}
+.ecoSearchBox .combineSearchBox {background-color: #FFF; margin: 0 auto; border: 1px solid #969696; z-index: 1;}
+.combineSearchBox.newInput.inputTextBox, .portfolioSearch .newInput.inputTextBox {padding: 0;}
+.ecoSearchBox .combineSearchOption {line-height: 20px;}
+.combineSearchOption {width:20px; padding:0; border:0; background:none; height:15px; line-height:15px; font-size:11px;}
+#economicCalendarLoading {display: none; margin: 20px auto; width: 10px;}
+
+.ecoFilterBox .restore {position:absolute; right:18px; top:18px;}
+/* NEW SEARCH */
+.searchPopupResults {width: auto;position: relative;top: -2px;left: 0;background-color: #fff;z-index: 4;border: 1px solid #808080;-webkit-box-shadow: 0 3px 3px rgba(64, 64, 64, 0.5);-moz-box-shadow: 0 3px 3px rgba(64, 64, 64, 0.5);box-shadow: 0 3px 3px rgba(64, 64, 64, 0.5);width: 570px\0;}
+.addSymboleContainer .searchPopupResults {top: 17px;z-index: 3;	position: absolute;}
+.searchPopupResults.dirSearchResults {position: absolute;top: 21px;left: 0px;width: 286px;}
+.searchPopupResults .row {width: auto;}
+.searchPopupResults .textBox {max-height: 315px;overflow-x: hidden;overflow-y: auto;padding: 0;width: auto;}
+.searchPopupResults I {display: inline;direction: ltr;}
+.searchPopupResults .textBox TABLE {width: 100%;}
+.searchPopupResults .row:hover {cursor: pointer;background-color:#edf4fa;}
+.searchPopupResults .hoverSearch {background-color:#edf4fa;}
+.searchPopupResults .textBox TD.first {width: 22%;padding-left: 10px;}
+.searchPopupResults .textBox TD.second {width: 49%;}
+.searchPopupResults .textBox TD.third {width: 29%;padding-right: 10px;color: #b2b2b2;}
+.searchPopupResults .textBox TD {white-space: nowrap;line-height: 21px;height: 21px;color: #333;}
+.searchPopupResults .countriesDiv {top: 21px;right: -40px;display: block;position: absolute;background-color: #fff;padding: 4px 0;border: 1px solid #808080;height: 250px;overflow-y: scroll;}
+.searchPopupResults .countriesDiv TD {padding: 0 10px;height: 21px;line-height: 21px;cursor: pointer;}
+.searchPopupResults .countriesDiv TD:hover {background-color:#edf4fa}
+.searchPopupResults .countriesDiv TD.selected {background-color: #DFE9F2;cursor: default;}
+.searchTabs {font-size: 11px;}
+.searchTabs .tabsForBox {border-bottom: 1px solid #999;width: 100%;}
+.searchTabs .tabsForBox LI A {padding: 0 11px;height: 11px;line-height: 11px;}
+.searchTabs .tabsForBox LI.selected A {margin: 0;border-top: 1px solid #999;margin-top: -1px;height: 22px;line-height: 21px;}
+.searchTabs .tabsForBox LI.selected.first A {padding-left: 12px;}
+.searchTabs .tabsForBox LI.first A {padding-left: 13px;}
+.searchTabs .tabsForBox LI.selected {margin: 0 0 0 -1px;}
+.searchTabs .tabsForBox LI.selected.last {margin: 0 -1px 0 -1px;}
+.searchTabs .tabsForBox LI.first {margin: 0 0 0 9px;}
+.searchTabs .tabsForBox LI.country {float: right;}
+.searchTabs .tabsForBox LI.country A {font-weight: normal; padding-left: 7px;}
+.searchTabs .tabsForBox LI.country A:after {content: ''; background-image:URL("https://i-invdn-com.investing.com/newSiteIconsSprite_v30e.png"); background-position:-82px -65px; display:inline-block; width:13px; height:8px;}
+.searchPopupResults .smallTriangleArrowUp {position:absolute; top:16px; right:50px; z-index:3;}
+.searchTabs .tabsForBox LI:last-child A {border-right:none;}
+.searchTabs .tabsForBox LI:last-child.selected A {border-right:1px solid #999;}
+.searchPopupResults.dirSearchResults {top: 20px;left: -1px;}
+/* /NEW SEARCH */
+
+.dateBtns .saveSpace {display:none;}
+
+@media (max-width: 635px) {
+	.dateBtns .saveSpace {
+		display:block;
+	}
+
+	/* Closed */
+	.dateBtns {
+		position:relative;
+		float:none;
+		left:auto;
+		right:175px;
+	}
+
+	.dateBtns LI {
+		position:absolute;
+		top:0;
+		right:0;
+		z-index:1;
+		float:none;
+	}
+
+	.dateBtns A.newBtn, .dateBtns A.newBtn.toggled {
+		width:82px;
+		height:20px;
+		line-height:22px;
+		padding:3px 10px 4px 6px;
+		border-right:1px solid #8C8C8C;
+		border-top:0;
+		border-bottom:1px solid #dadada;
+		background:#fff;
+		font-weight:normal;
+		box-shadow:none;
+		display:none;
+	}
+
+	.dateBtns A.newBtn:after, .dateBtns A.newBtn .after {
+		border: none;
+	}
+
+	.dateBtns A.newBtn.toggled,	.dateBtns .saveSpace A.newBtn {
+		color:#333;
+		font-weight:bold;
+	}
+
+	.dateBtns .saveSpace {
+		z-index:2;
+	}
+
+	.dateBtns A.newBtn.last {
+		border-bottom:1px solid #8C8C8C;
+	}
+
+	.dateBtns .saveSpace A {
+		color: #333;
+		background:#f6f6f6;
+		background:-o-linear-gradient(top,#f6f6f6 0%,#e4e4e4);
+		background:-ms-linear-gradient(top,#f6f6f6 0%,#e4e4e4);
+		background:-moz-linear-gradient(top,#f6f6f6 0%,#e4e4e4);
+		background:-webkit-gradient(linear, left top, left bottom, from(#F6F6F6),to(#E4E4E4));
+		border: 1px solid #8C8C8C;
+		box-shadow:none;
+		-moz-box-shadow:none;
+		-webkit-box-shadow:none;
+		display:block;
+		border-top:1px solid #8C8C8C;
+		border-bottom:1px solid #8C8C8C;
+		line-height:14px;
+		height:14px;
+
+	}
+
+	.dateBtns LI.openArrow {
+		z-index:2;
+	}
+
+	.dateBtns LI.openArrow SPAN, .dateBtns:hover LI.openArrow SPAN {
+		background-image: URL("https://i-invdn-com.investing.com/newSiteIconsSprite_v30e.png");
+		z-index:4;
+		background-position:-136px -1094px;
+		position:absolute;
+		width:9px;
+		height:7px;
+		top:8px;
+		right:8px;
+	}
+
+	/* Opened */
+
+	.dateBtns.opened {
+		position:absolute;
+		left:auto;
+		right:175px;
+	}
+	.dateBtns.opened LI {
+		position:relative;
+		left:0;
+		right:0;
+		z-index:2;
+	}
+
+	.dateBtns.opened LI A, .dateBtns.opened A.newBtn.toggled {
+		display:block;
+	}
+	.dateBtns.opened LI A:hover, .dateBtns.opened A.newBtn.toggled:hover {
+		background:#fff;
+		box-shadow:none;
+		-moz-box-shadow:none;
+		-webkit-box-shadow:none;
+	}
+
+	.dateBtns.opened .saveSpace A:hover {
+		background:#ededed;
+		background:-o-linear-gradient(top,#ededed 0%,#d6d6d6);
+		background:-ms-linear-gradient(top,#ededed 0%,#d6d6d6);
+		background:-moz-linear-gradient(top,#ededed 0%,#d6d6d6);
+		background:-webkit-gradient(linear, left top, left bottom, from(#EDEDED),to(#D6D6D6));
+		box-shadow:inset 0px 0px 0px 1px #F7F7F7;
+		-moz-box-shadow:inset 0px 0px 0px 1px #F7F7F7;
+		-webkit-box-shadow:inset 0px 0px 0px 1px #F7F7F7;
+	}
+
+	.dateBtns.opened LI.openArrow {
+		position:absolute;
+	}
+
+	/*.newBtn.toggleButton.toggled {color:#333333; background:-o-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-ms-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-moz-linear-gradient(top,#f6f6f6 0%,#e4e4e4); background:-webkit-gradient(linear, left top, left bottom, from(#f6f6f6),to(#e4e4e4)); filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#f6f6f6,endColorstr=#e4e4e4,GradientType=0); zoom:1; border:1px solid #8c8c8c; box-shadow:inset 0px 0px 0px 1px #EBEBEB; -moz-box-shadow:inset 0px 0px 0px 1px #EBEBEB; -webkit-box-shadow:inset 0px 0px 0px 1px #EBEBEB;}
+	.newBtn.LightGray:hover {background:-o-linear-gradient(top,#ededed 0%,#d6d6d6); background:-ms-linear-gradient(top,#ededed 0%,#d6d6d6); background:-moz-linear-gradient(top,#ededed 0%,#d6d6d6); background:-webkit-gradient(linear, left top, left bottom, from(#ededed),to(#d6d6d6));	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#ededed,endColorstr=#d6d6d6,GradientType=0); zoom:1; box-shadow:inset 0px 0px 0px 1px #F7F7F7; -moz-box-shadow:inset 0px 0px 0px 1px #F7F7F7; -webkit-box-shadow:inset 0px 0px 0px 1px #F7F7F7;}
+	.newBtn.LightGray:active {background:-o-linear-gradient(top,#e6e6e6 0%,#dadada); background:-ms-linear-gradient(top,#e6e6e6 0%,#dadada); background:-moz-linear-gradient(top,#e6e6e6 0%,#dadada); background:-webkit-gradient(linear, left top, left bottom, from(#e6e6e6),to(#dadada)); filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#e6e6e6,endColorstr=#dadada,GradientType=0); zoom:1; box-shadow:inset 0px 0px 0px 1px #E3E3E3; -moz-box-shadow:inset 0px 0px 0px 1px #E3E3E3; -webkit-box-shadow:inset 0px 0px 0px 1px #E3E3E3;}
+	.newBtn.LightGray:before, .newBtn.lGray .before {box-shadow:inset -1px 0px 0px 0px #F8F8F8;}
+	.newBtn.LightGray:after, .newBtn.lGray .after {border-color:#E3E3E3;}
+	.newBtn.LightGray:active:after, .newBtn.lGray:active .after {border:0;}*/
+
+
+	.ecoFilterBox .left {width:77px;}
+
+
+	/* Legend responsive */
+	.ecoCalLegend {
+		padding:17px 15px;
+	}
+	.ecoCalLegend DL, .ecoCalLegend UL {
+		float:none;
+		border:0;
+		border-top:1px solid #dadada;
+		width:100%;
+	}
+
+	.ecoCalLegend DL.ecoCalLegend_1 {
+		border:0;
+	}
+	.ecoCalLegend_1 {margin-top:12px;}
+	.ecoCalLegend_2 {margin-top:5px; padding-top:7px; padding-bottom:1px; padding-left:2px;}
+	.ecoCalLegend_2 .sandClock {position:relative; top:-2px; left:-2px;}
+	.ecoCalLegend_3 {margin-top:4px; padding-top:5px;}
+	.ecoCalLegend UL.ecoCalLegend_3 {padding-left:0;}
+	}
+	
+	.wmtBannerAffSnippet {
+		width:468px;
+		height:60px;
+		margin:0 auto 13px;
+		display:block;
+	}
+
+	.eventPageLinkContainer {
+		margin: 25px 0 20px;
+	}
+	.eventPageLinkContainer .alertIcon {
+   		background-image: URL("https://i-invdn-com.investing.com/newSiteIconsSprite_v37h.png");
+	    background-position: -86px -1359px;
+	    display: inline-block;
+	    width: 16px;
+	    height: 16px;
+	    vertical-align: middle;
+	    margin-right: 1px;
+	}
+	.eventPageLinkContainer A {
+	    text-decoration: none;
+    	color: #1256A0;
+    	vertical-align: middle;
+	}
+	.eventPageLinkContainer A:hover {
+		text-decoration: underline;
+	}
+	.talkMarketsLogo {
+		margin-top: 2px;
+    	margin-right: 1px;
+	}
+</style>
+<!--[if IE 8]>
+        	<style>
+            	.ecoCalLegend {
+                    padding:17px 15px;
+                    width:100%;
+                    box-sizing:border-box;
+                }
+                .ecoCalLegend DL, .ecoCalLegend UL {
+                    float:none;
+                    border:0;
+                    border-top:1px solid #dadada;
+                    width:100%;
+                }
+
+                .ecoCalLegend DL.ecoCalLegend_1 {
+                    border:0;
+                }
+                .ecoCalLegend_1 {margin-top:12px;}
+                .ecoCalLegend_2 {margin-top:5px; padding-top:7px; padding-bottom:1px; padding-left:2px;}
+                .ecoCalLegend_2 .sandClock {position:relative; top:-2px; left:-2px;}
+                .ecoCalLegend_3 {margin-top:4px; padding-top:5px;}
+                .ecoCalLegend UL.ecoCalLegend_3 {padding-left:0;}
+            </style>
+        <![endif]-->
+<style>
+		.greenAndroidIcon {
+			background-position:-95px -1337px;
+			width:15px;
+			height:19px;
+			display:inline-block;
+		}
+		.greyAppleLogo {
+			background-position:-94px -1464px;
+			width: 15px;
+			height: 17px;
+			display:inline-block;
+		}
+		.downloadApp {
+			margin-left:5px;
+			position:relative;
+			top:-3px;
+		}
+		.downloadApp + .downloadApp {
+			margin-left:7px;
+			padding-left:5px;
+			border-left:1px solid #dadada;
+			height:16px;
+			line-height:0;
+		}
+		.wmtTooltip {
+			display:none;
+			padding:5px 8px 5px 7px;
+			background-color:#333;
+			color:#fff;
+			line-height:normal;
+			position:absolute;
+			top:31px;
+			left:-5px;
+			z-index:1;
+			white-space:nowrap;
+			font-weight:bold;
+		}
+		.wmtTooltip:before {
+			content:"";
+			border-style:solid;
+			border-color:transparent transparent #333 transparent;
+			border-width:0 6px 6px 6px;
+			left:7px;
+			top:-6px;
+			position:absolute;
+			display:block;
+		}/* tooltip triangle */
+		.downloadApp:hover .wmtTooltip {
+			display:block;
+		}
+		.downloadApp + .downloadApp .wmtTooltip {
+			left:-1px;
+			top:29px;
+		}
+			</style>
+
+
+<div class="inlineblock">
+
+<form name="economicCalendarForm" id="economicCalendarForm" method="POST">
+<input type="hidden" name="dateFrom" id="dateFrom" value="2023-03-04">
+<input type="hidden" name="dateTo" id="dateTo" value="2023-03-04">
+<input type="hidden" name="timeframe" id="timeframe" value="today">
+<input id="columnsexc_flags" name="columns[]" type="checkbox" value="exc_flags" checked="" class="displayNone">
+<input id="columnsexc_currency" name="columns[]" type="checkbox" value="exc_currency" checked="" class="displayNone">
+<input id="columnsexc_importance" name="columns[]" type="checkbox" value="exc_importance" checked="" class="displayNone">
+<input id="columnsexc_actual" name="columns[]" type="checkbox" value="exc_actual" checked="" class="displayNone">
+<input id="columnsexc_forecast" name="columns[]" type="checkbox" value="exc_forecast" checked="" class="displayNone">
+<input id="columnsexc_previous" name="columns[]" type="checkbox" value="exc_previous" checked="" class="displayNone">
+<input type="hidden" name="timeZone" id="timeZone" class="displayNone" value="25" attrx="" attry="5">
+<div class="eCalNew eCalMain">
+<header id="headerRow" class="">
+<a class="logo" style="display:inline-block !important;" href="http://www.investing.com" target="_blank"><img src="https://i-invdn-com.investing.com/logos/investingLogo-137x25.png" alt=""></a>
+<a href="https://app.appsflyer.com/com.fusionmedia.investing?pid=direct_inv&amp;c=web&amp;af_channel=sslecal2.forexprostools.com/?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&amp;category=_employment,_economicActivity,_inflation,_credit,_centralBanks,_confidenceIndex,_balance,_Bonds&amp;importance=1,2,3&amp;features=datepicker,timezone,timeselector,filters&amp;countries=25,6,37,72,22,17,39,10,35,43,26,12,4,5&amp;calType=day&amp;timeZone=25&amp;lang=1&amp;af_adset=sslecal2&amp;af_ad=wmt&amp;af_sub1=WMT" target="_blank" class="downloadApp" style="margin-left:5px; top:-3px; position:relative !important; display:inline-block !important;"><span class="newSiteIconsSprite greenAndroidIcon" style="display:inline-block !important;"></span><span class="wmtTooltip arial_11">Download App</span></a><a href="https://app.appsflyer.com/id909998122?pid=direct_inv&amp;c=web&amp;af_channel=sslecal2.forexprostools.com/?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&amp;category=_employment,_economicActivity,_inflation,_credit,_centralBanks,_confidenceIndex,_balance,_Bonds&amp;importance=1,2,3&amp;features=datepicker,timezone,timeselector,filters&amp;countries=25,6,37,72,22,17,39,10,35,43,26,12,4,5&amp;calType=day&amp;timeZone=25&amp;lang=1&amp;af_adset=sslecal2&amp;af_ad=wmt&amp;af_sub1=WMT" target="_blank" class="downloadApp" style="top:-3px; position:relative !important; display:inline-block !important;"><span class="newSiteIconsSprite greyAppleLogo" style="display:inline-block !important;"></span><span class="wmtTooltip arial_11">Download App</span></a><iframe style="float:right;" src="https://ad.doubleclick.net/ddm/adi/N5872.2079124INVAFF/B9105698.123658976;sz=95x24;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" marginwidth="0" marginheight="0" hspace="0" vspace="0" scrolling="no" bordercolor="#000000" width="95" height="24" frameborder="0">
+<SCRIPT language="JavaScript1.1" SRC="https://ad.doubleclick.net/ddm/adj/N5872.2079124INVAFF/B9105698.123658976;abr=!ie;sz=95x24;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?">
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="https://ad.doubleclick.net/ddm/jump/N5872.2079124INVAFF/B9105698.123658976;abr=!ie4;abr=!ie5;sz=95x24;ord=[timestamp]?">
+<IMG SRC="https://ad.doubleclick.net/ddm/ad/N5872.2079124INVAFF/B9105698.123658976;abr=!ie4;abr=!ie5;sz=95x24;ord=[timestamp];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" BORDER=0 WIDTH=95 HEIGHT=24 ALT="Advertisement"></A>
+</NOSCRIPT>
+</iframe>
+<div class="ecoTimeAndText float_lang_base_2">
+<div id="ecoCurrentTime" class="ecoCurrentTime arial_11 lightgrayFont float_lang_base_2"> <span class="newSiteIconsSprite grayClockIcon">&nbsp;</span> Current Time : <span id="currentTime" class="bold blackFont">13:06</span> <span id="timeZoneGmtOffsetFormatted">(GMT +6:00)</span> <span class="newSiteIconsSprite dropDownArrowGray">&nbsp;</span> </div>
+<div id="ecoCurrentTimePop" class="ecoCurrentTimePop displayNone dirLtr align_left">
+<div class="SubmenuNav hoverboxWithShadow hoverRows">
+<ul class="arial_12">
+<li id="liTz2">(GMT -11:00) Midway Island</li>
+<li id="liTz35">(GMT -11:00) Samoa</li>
+<li id="liTz3">(GMT -10:00) Hawaii</li>
+<li id="liTz4">(GMT -9:00) Alaska</li>
+<li id="liTz36">(GMT -8:00) Baja California</li>
+<li id="liTz5">(GMT -8:00) Pacific Time (US &amp; Canada)</li>
+<li id="liTz37">(GMT -7:00) Arizona</li>
+<li id="liTz38">(GMT -7:00) Chihuahua, La Paz, Mazatlan</li>
+<li id="liTz6">(GMT -7:00) Mountain Time (US &amp; Canada)</li>
+<li id="liTz169">(GMT -06:00) </li>
+<li id="liTz39">(GMT -6:00) Central America</li>
+<li id="liTz7">(GMT -6:00) Central Time (US &amp; Canada)</li>
+<li id="liTz40">(GMT -6:00) Guadalajara, Mexico City, Monterrey</li>
+<li id="liTz41">(GMT -6:00) Saskatchewan</li>
+<li id="liTz159">(GMT -5:00) </li>
+<li id="liTz170">(GMT -05:00) </li>
+<li id="liTz171">(GMT -05:00) </li>
+<li id="liTz172">(GMT -05:00) </li>
+<li id="liTz173">(GMT -5:00) </li>
+<li id="liTz42">(GMT -5:00) Bogota, Lima, Quito</li>
+<li id="liTz8">(GMT -5:00) Eastern Time (US &amp; Canada)</li>
+<li id="liTz43">(GMT -5:00) Indiana (East)</li>
+<li id="liTz101">(GMT -4:00) </li>
+<li id="liTz102">(GMT -4:00) </li>
+<li id="liTz103">(GMT -4:00) </li>
+<li id="liTz104">(GMT -4:00) </li>
+<li id="liTz158">(GMT -4:00) </li>
+<li id="liTz10">(GMT -4:00) Atlantic Time (Canada)</li>
+<li id="liTz9">(GMT -4:00) Caracas</li>
+<li id="liTz45">(GMT -4:00) Cuiaba</li>
+<li id="liTz46">(GMT -4:00) Georgetown, La Paz, Manaus, San Juan</li>
+<li id="liTz11">(GMT -3:30) Newfoundland</li>
+<li id="liTz105">(GMT -3:00) </li>
+<li id="liTz106">(GMT -3:00) </li>
+<li id="liTz168">(GMT -03:00) </li>
+<li id="liTz198">(GMT -3:00) </li>
+<li id="liTz44">(GMT -3:00) Asuncion</li>
+<li id="liTz12">(GMT -3:00) Brasilia</li>
+<li id="liTz48">(GMT -3:00) Buenos Aires</li>
+<li id="liTz49">(GMT -3:00) Cayenne, Fortaleza</li>
+<li id="liTz50">(GMT -3:00) Greenland</li>
+<li id="liTz51">(GMT -3:00) Montevideo</li>
+<li id="liTz47">(GMT -3:00) Santiago</li>
+<li id="liTz14">(GMT -1:00) Azores</li>
+<li id="liTz53">(GMT -1:00) Cape Verde Is.</li>
+<li id="liTz197">(GMT) </li>
+<li id="liTz200">(GMT) </li>
+<li id="liTz201">(GMT) </li>
+<li id="liTz55">(GMT) Coordinated Universal Time</li>
+<li id="liTz15">(GMT) Dublin, Edinburgh, Lisbon, London</li>
+<li id="liTz56">(GMT) Monrovia, Reykjavik</li>
+<li id="liTz167">(GMT +01:00) </li>
+<li id="liTz182">(GMT +1:00) </li>
+<li id="liTz183">(GMT +1:00) </li>
+<li id="liTz184">(GMT +1:00) </li>
+<li id="liTz186">(GMT +1:00) </li>
+<li id="liTz187">(GMT +1:00) </li>
+<li id="liTz188">(GMT +1:00) </li>
+<li id="liTz189">(GMT +1:00) </li>
+<li id="liTz190">(GMT +1:00) </li>
+<li id="liTz193">(GMT +1:00) </li>
+<li id="liTz196">(GMT +1:00) </li>
+<li id="liTz16">(GMT +1:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</li>
+<li id="liTz57">(GMT +1:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</li>
+<li id="liTz58">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</li>
+<li id="liTz54">(GMT +1:00) Casablanca</li>
+ <li id="liTz166">(GMT +1:00) Lagos</li>
+<li id="liTz59">(GMT +1:00) Sarajevo, Skopje, Warsaw, Zagreb</li>
+<li id="liTz60">(GMT +1:00) West Central Africa</li>
+<li id="liTz98">(GMT +2:00) </li>
+<li id="liTz99">(GMT +2:00) </li>
+<li id="liTz107">(GMT +2:00) </li>
+<li id="liTz160">(GMT +02:00) </li>
+<li id="liTz162">(GMT +02:00) </li>
+<li id="liTz165">(GMT +02:00) </li>
+<li id="liTz185">(GMT +2:00) </li>
+<li id="liTz191">(GMT +2:00) </li>
+<li id="liTz192">(GMT +2:00) </li>
+<li id="liTz194">(GMT +2:00) </li>
+<li id="liTz195">(GMT +2:00) </li>
+<li id="liTz199">(GMT +2:00) </li>
+<li id="liTz62">(GMT +2:00) Amman</li>
+<li id="liTz64">(GMT +2:00) Beirut</li>
+<li id="liTz65">(GMT +2:00) Cairo</li>
+<li id="liTz66">(GMT +2:00) Damascus</li>
+<li id="liTz68">(GMT +2:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</li>
+<li id="liTz17">(GMT +2:00) Jerusalem</li>
+<li id="liTz67">(GMT +02:00) Johannesburg</li>
+<li id="liTz61">(GMT +2:00) Windhoek</li>
+<li id="liTz109">(GMT +3:00) </li>
+<li id="liTz161">(GMT +03:00) </li>
+<li id="liTz164">(GMT +03:00) </li>
+<li id="liTz174">(GMT +03:00) </li>
+<li id="liTz179">(GMT +03:00) </li>
+<li id="liTz180">(GMT +03:00) </li>
+<li id="liTz71">(GMT +3:00) Baghdad</li>
+<li id="liTz63">(GMT +3:00) Istanbul</li>
+<li id="liTz70">(GMT +3:00) Kuwait, Riyadh</li>
+<li id="liTz18">(GMT +3:00) Moscow, St. Petersburg, Volgograd</li>
+<li id="liTz72">(GMT +3:00) Nairobi</li>
+<li id="liTz19">(GMT +3:30) Tehran</li>
+<li id="liTz74">(GMT +4:00) </li>
+<li id="liTz75">(GMT +4:00) </li>
+<li id="liTz76">(GMT +4:00) </li>
+<li id="liTz175">(GMT +04:00) </li>
+<li id="liTz20">(GMT +4:00) Abu Dhabi, Dubai, Muscat</li>
+<li id="liTz73">(GMT +4:00) Baku</li>
+<li id="liTz21">(GMT +4:30) Kabul</li>
+<li id="liTz78">(GMT +5:00) </li>
+<li id="liTz22">(GMT +5:00) Ekaterinburg</li>
+<li id="liTz77">(GMT +5:00) Karachi</li>
+<li id="liTz177">(GMT +05:30) </li>
+<li id="liTz23">(GMT +5:30) Chennai, Kolkata, Mumbai, New Delhi</li>
+<li id="liTz79">(GMT +5:30) Colombo</li>
+<li id="liTz24">(GMT +5:45) Kathmandu</li>
+<li id="liTz80">(GMT +6:00) </li>
+ <li id="liTz25">(GMT +6:00) Dhaka</li>
+<li id="liTz26">(GMT +6:30) Yangon (Rangoon)</li>
+<li id="liTz81">(GMT +7:00) </li>
+<li id="liTz82">(GMT +7:00) </li>
+<li id="liTz110">(GMT +7:00) </li>
+<li id="liTz111">(GMT +7:00) </li>
+<li id="liTz176">(GMT +07:00) </li>
+<li id="liTz27">(GMT +7:00) Bangkok, Hanoi, Jakarta</li>
+<li id="liTz83">(GMT +8:00) </li>
+<li id="liTz85">(GMT +8:00) </li>
+<li id="liTz86">(GMT +8:00) </li>
+<li id="liTz87">(GMT +8:00) </li>
+<li id="liTz112">(GMT +8:00) </li>
+<li id="liTz181">(GMT +08:00) </li>
+<li id="liTz28">(GMT +8:00) Beijing, Chongqing, Hong Kong, Urumqi</li>
+<li id="liTz178">(GMT +08:00) Manila</li>
+<li id="liTz113">(GMT +8:00) Singapore</li>
+<li id="liTz89">(GMT +9:00) </li>
+<li id="liTz29">(GMT +9:00) Osaka, Sapporo, Tokyo</li>
+<li id="liTz88">(GMT +9:00) Seoul</li>
+<li id="liTz90">(GMT +9:30) </li>
+<li id="liTz114">(GMT +10:00) </li>
+<li id="liTz115">(GMT +10:00) </li>
+<li id="liTz91">(GMT +10:00) Brisbane</li>
+<li id="liTz94">(GMT +10:00) Vladivostok</li>
+<li id="liTz30">(GMT +10:30) Adelaide</li>
+<li id="liTz93">(GMT +11:00) </li>
+<li id="liTz100">(GMT +11:00) </li>
+<li id="liTz116">(GMT +11:00) </li>
+<li id="liTz117">(GMT +11:00) </li>
+<li id="liTz31">(GMT +11:00) Canberra, Melbourne, Sydney</li>
+<li id="liTz32">(GMT +11:00) Solomon Is., New Caledonia</li>
+<li id="liTz96">(GMT +12:00) </li>
+<li id="liTz1">(GMT +12:00) Eniwetok, Kwajalein</li>
+<li id="liTz97">(GMT +13:00) </li>
+<li id="liTz33">(GMT +13:00) Auckland, Wellington</li>
+</ul>
+<span class="newSiteIconsSprite arrow">&nbsp;</span>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</header>
+<div class="ecoTimeAndDate">
+<div class="float_lang_base_2">
+<div style="position:relative;background-color:#FFFFFF; border:1px solid #8c8c8c; height:21px; left:0; top:0; margin-left:13px; width:174px; *width:187px;" id="flatDatePickerCanvasHol" class="datePickerWrap">
+<div class="float_lang_base_1" id="widget">
+<div id="widgetField" class="inlineblock" style="width:145px; *width:auto; border:0 none; margin:0; padding:1px 0 0; text-align:center; vertical-align:top; cursor:pointer; line-height:19px;">
+<div style="font-weight:normal; font-size:11px; color:#333;line-height:19px; padding:0 4px 0 7px; width:auto; *width:150px;" id="widgetFieldDateRange" class="inlineblock arial_11 lightgrayFont">
+03/04/2023 - 03/04/2023 </div>
+ </div>
+<div id="widgetFieldBottomBorder"></div>
+<div style="left:auto; right:-30px; margin-top:-4px; width:183px;" id="widgetHolCalendar"><div class="datepicker" id="datepicker_163" style="display: block; position: absolute; width: 176px; height: 228px;"><div class="datepickerBorderT"></div><div class="datepickerBorderB"></div><div class="datepickerBorderL"></div><div class="datepickerBorderR"></div><div class="datepickerBorderTL"></div><div class="datepickerBorderTR"></div><div class="datepickerBorderBL"></div><div class="datepickerBorderBR"></div><div class="datepickerContainer" style="width: 156px; height: 179px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td><table class="datepickerViewDays" cellspacing="0" cellpadding="0"><thead><tr><th colspan="9"><a class="datepickerGoPrev newSiteIconsSprite datePickerPrevArrow" href="#"><span>&nbsp;</span></a><a class="datepickerMonth" href="#"><span>March, 2023</span></a><a class="datepickerGoNext newSiteIconsSprite datePickerNextArrow" href="#"><span>&nbsp;</span></a></th></tr><tr class="datepickerDoW"><th colspan="2"><span>Su</span></th><th><span>Mo</span></th><th><span>Tu</span></th><th><span>We</span></th><th><span>Th</span></th><th><span>Fr</span></th><th colspan="2"><span>Sa</span></th></tr></thead><tbody class="datepickerMonths"><tr><td colspan="9" class="arial_11"><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>Jan.</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>Feb.</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>Mar.</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>Apr.</span></a></td></tr><tr><td colspan="9" class="arial_11"><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>May</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>Jun.</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>Jul.</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>Aug.</span></a></td></tr><tr><td colspan="9" class="arial_11"><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>Sep.</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>Oct.</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>Nov.</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>Dec.</span></a></td></tr></tbody><tbody class="datepickerDays"><tr><td colspan="9" class="separator">&nbsp;</td></tr><tr></tr><tr><td class="sideColumn"></td><td class="datepickerNotInMonth datepickerSunday"><a href="#"><span>26</span></a></td><td class="datepickerNotInMonth"><a href="#"><span>27</span></a></td><td class="datepickerNotInMonth"><a href="#"><span>28</span></a></td><td class=""><a href="#"><span>1</span></a></td><td class=""><a href="#"><span>2</span></a></td><td class=""><a href="#"><span>3</span></a></td><td class="datepickerSaturday datepickerSelected"><a href="#"><span>4</span></a></td><td class="sideColumn"></td></tr><tr><td class="sideColumn"></td><td class="datepickerSunday"><a href="#"><span>5</span></a></td><td class=""><a href="#"><span>6</span></a></td><td class=""><a href="#"><span>7</span></a></td><td class=""><a href="#"><span>8</span></a></td><td class=""><a href="#"><span>9</span></a></td><td class=""><a href="#"><span>10</span></a></td><td class="datepickerSaturday"><a href="#"><span>11</span></a></td><td class="sideColumn"></td></tr><tr><td class="sideColumn"></td><td class="datepickerSunday"><a href="#"><span>12</span></a></td><td class=""><a href="#"><span>13</span></a></td><td class=""><a href="#"><span>14</span></a></td><td class=""><a href="#"><span>15</span></a></td><td class=""><a href="#"><span>16</span></a></td><td class=""><a href="#"><span>17</span></a></td><td class="datepickerSaturday"><a href="#"><span>18</span></a></td><td class="sideColumn"></td></tr><tr><td class="sideColumn"></td><td class="datepickerSunday"><a href="#"><span>19</span></a></td><td class=""><a href="#"><span>20</span></a></td><td class=""><a href="#"><span>21</span></a></td><td class=""><a href="#"><span>22</span></a></td><td class=""><a href="#"><span>23</span></a></td><td class=""><a href="#"><span>24</span></a></td><td class="datepickerSaturday"><a href="#"><span>25</span></a></td><td class="sideColumn"></td></tr><tr><td class="sideColumn"></td><td class="datepickerSunday"><a href="#"><span>26</span></a></td><td class=""><a href="#"><span>27</span></a></td><td class=""><a href="#"><span>28</span></a></td><td class=""><a href="#"><span>29</span></a></td><td class=""><a href="#"><span>30</span></a></td><td class=""><a href="#"><span>31</span></a></td><td class="datepickerNotInMonth datepickerSaturday"><a href="#"><span>1</span></a></td><td class="sideColumn"></td></tr><tr><td class="sideColumn"></td><td class="datepickerNotInMonth datepickerSunday"><a href="#"><span>2</span></a></td><td class="datepickerNotInMonth"><a href="#"><span>3</span></a></td><td class="datepickerNotInMonth"><a href="#"><span>4</span></a></td><td class="datepickerNotInMonth"><a href="#"><span>5</span></a></td><td class="datepickerNotInMonth"><a href="#"><span>6</span></a></td><td class="datepickerNotInMonth"><a href="#"><span>7</span></a></td><td class="datepickerNotInMonth datepickerSaturday"><a href="#"><span>8</span></a></td><td class="sideColumn"></td></tr></tbody><tbody class="datepickerYears"><tr><td colspan="9" class="arial_11"><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2017</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2018</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2019</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2020</span></a></td></tr><tr><td colspan="9" class="arial_11"><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2021</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2022</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2023</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2024</span></a></td></tr><tr><td colspan="9" class="arial_11"><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2025</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2026</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2027</span></a><a href="#" style="display:inline-block !important; *display:inline; *zoom:1;"><span>2028</span></a></td></tr></tbody></table></td></tr></tbody></table><div class="float_lang_base_2" style="margin-top:8px;"><span id="datePickerApplyButton" class="newBtnHover"><a class="newBtn Arrow LightGray">Apply</a></span></div></div></div></div>
+</div>
+<div id="datePickerIconWrap" class="float_lang_base_2 datePickerIconWrap pointer"><span class="newSiteIconsSprite datePickerIcon inlineblock">&nbsp;</span></div>
+</div>
+</div>
+<a href="javascript:void(0);" onclick="changeFiltersVisibility();" id="filterStateAnchor" class="newBtn filter LightGray float_lang_base_1">Filters<span class="newSiteIconsSprite filtersOnLight" id="filterStateButton"></span></a> <ul id="timeselector" class="float_lang_base_2 dateBtns">
 <li class="saveSpace"><a href="javascript:void(0);" class="newBtn toggleButton LightGray">Today</a></li>
 <li><a href="javascript:void(0);" id="timeFrame_yesterday" class="newBtn toggleButton LightGray first">Yesterday</a></li>
 <li><a href="javascript:void(0);" id="timeFrame_today" class="newBtn toggleButton LightGray toggled">Today</a></li>
@@ -45,17 +1803,1394 @@ marginheight="0">
         $(".dateBtns LI").click(function() {
           $(".dateBtns").toggleClass("opened");
         });
-</script>
+        </script>
+</div>
+<div class="clear"></div>
+<script>
+
+	
+	
+	</script>
+<div id="filtersWrapper" class="displayNone">
+<div id="filtersArrowIndicator" class="newSiteIconsSprite arrowIndicator "></div>
+<div id="ecoSearchBox" class="ecoSearchBox align_center ">
+<span onclick="changeFiltersVisibility();" class="float_lang_base_2 newSiteIconsSprite bugCloseIcon">&nbsp;</span>
+<div class="searchTitle inlineblock arial_14 bold">Search:&nbsp;</div>
+<div id="economicCalendarSearchTextContainer" class="combineSearchBox newInput inputTextBox inlineblock">
+<div id="searchBoxTop" class="inlineblock"><input type="text" onkeypress="return checkEnterForEcSearch(event);" autocomplete="off" name="quotes_search_text" id="economicCalendarSearchText" class="searchText alignTop" placeholder="Event Name" value"event="" name"=""></div><div id="search_0bottom" class="inlineblock combineSearchOption combineSearchOptionSelected alignTop"><span class="newSiteIconsSprite searchGlassIcon">&nbsp;</span></div>
+<div id="economicCalendarSearchPopupResults" class="searchPopupResults text_align_lang_base_1 dirSearchResults displayNone">
+</div>
+</div>
+<div class="displayNone" id="doc_direconomicCalendarSearchPopupResults">ltr</div>
+<div class="displayNone" id="total_resultseconomicCalendarSearchPopupResults">0</div>
+</div>
+<div id="ecoFilterBoxCountry" class="ecoFilterBox">
+<div class="left">
+<p class="arial_14 bold">Country:</p>
+<a href="javascript:void(0);" id="selectAllCountry" onclick="selectAll('country[]');">Select All</a><br>
+<a href="javascript:void(0);" id="clearAllCountry" onclick="clearAll('country[]');">Clear</a>
+</div>
+<div class="right">
+<ul class="countryOption">
+<li>
+<input id="country95" name="country[]" type="checkbox" value="95">
+<label for="country95"><span class="ceFlags Albania">&nbsp;</span><span class="countryName">Albania</span></label>
+</li>
+<li>
+<input id="country86" name="country[]" type="checkbox" value="86">
+<label for="country86"><span class="ceFlags Angola">&nbsp;</span><span class="countryName">Angola</span></label>
+</li>
+<li>
+<input id="country29" name="country[]" type="checkbox" value="29">
+<label for="country29"><span class="ceFlags Argentina">&nbsp;</span><span class="countryName">Argentina</span></label>
+</li>
+<li>
+<input id="country25" name="country[]" type="checkbox" value="25" checked="checked">
+<label for="country25"><span class="ceFlags Australia">&nbsp;</span><span class="countryName">Australia</span></label>
+</li>
+<li>
+<input id="country54" name="country[]" type="checkbox" value="54">
+<label for="country54"><span class="ceFlags Austria">&nbsp;</span><span class="countryName">Austria</span></label>
+</li>
+<li>
+<input id="country114" name="country[]" type="checkbox" value="114">
+<label for="country114"><span class="ceFlags Azerbaijan">&nbsp;</span><span class="countryName">Azerbaijan</span></label>
+</li>
+<li>
+<input id="country145" name="country[]" type="checkbox" value="145">
+<label for="country145"><span class="ceFlags Bahrain">&nbsp;</span><span class="countryName">Bahrain</span></label>
+</li>
+<li>
+<input id="country47" name="country[]" type="checkbox" value="47">
+<label for="country47"><span class="ceFlags Bangladesh">&nbsp;</span><span class="countryName">Bangladesh</span></label>
+</li>
+<li>
+<input id="country34" name="country[]" type="checkbox" value="34">
+<label for="country34"><span class="ceFlags Belgium">&nbsp;</span><span class="countryName">Belgium</span></label>
+</li>
+<li>
+<input id="country174" name="country[]" type="checkbox" value="174">
+<label for="country174"><span class="ceFlags Bosnia">&nbsp;</span><span class="countryName">Bosnia-Herzegovina</span></label>
+</li>
+<li>
+<input id="country163" name="country[]" type="checkbox" value="163">
+<label for="country163"><span class="ceFlags Botswana">&nbsp;</span><span class="countryName">Botswana</span></label>
+</li>
+<li>
+<input id="country32" name="country[]" type="checkbox" value="32">
+<label for="country32"><span class="ceFlags Brazil">&nbsp;</span><span class="countryName">Brazil</span></label>
+</li>
+<li>
+<input id="country70" name="country[]" type="checkbox" value="70">
+<label for="country70"><span class="ceFlags Bulgaria">&nbsp;</span><span class="countryName">Bulgaria</span></label>
+</li>
+<li>
+<input id="country6" name="country[]" type="checkbox" value="6" checked="checked">
+<label for="country6"><span class="ceFlags Canada">&nbsp;</span><span class="countryName">Canada</span></label>
+</li>
+<li>
+<input id="country232" name="country[]" type="checkbox" value="232">
+<label for="country232"><span class="ceFlags Cayman_Islands">&nbsp;</span><span class="countryName">Cayman Islands</span></label>
+</li>
+<li>
+<input id="country27" name="country[]" type="checkbox" value="27">
+<label for="country27"><span class="ceFlags Chile">&nbsp;</span><span class="countryName">Chile</span></label>
+</li>
+<li>
+<input id="country37" name="country[]" type="checkbox" value="37" checked="checked">
+<label for="country37"><span class="ceFlags China">&nbsp;</span><span class="countryName">China</span></label>
+</li>
+<li>
+<input id="country122" name="country[]" type="checkbox" value="122">
+<label for="country122"><span class="ceFlags Colombia">&nbsp;</span><span class="countryName">Colombia</span></label>
+</li>
+<li>
+<input id="country15" name="country[]" type="checkbox" value="15">
+<label for="country15"><span class="ceFlags Costa_Rica">&nbsp;</span><span class="countryName">Costa Rica</span></label>
+</li>
+<li>
+<input id="country78" name="country[]" type="checkbox" value="78">
+<label for="country78"><span class="ceFlags Cote_dIvoire">&nbsp;</span><span class="countryName">Cote D'Ivoire</span></label>
+</li>
+<li>
+<input id="country113" name="country[]" type="checkbox" value="113">
+<label for="country113"><span class="ceFlags Croatia">&nbsp;</span><span class="countryName">Croatia</span></label>
+</li>
+<li>
+<input id="country107" name="country[]" type="checkbox" value="107">
+<label for="country107"><span class="ceFlags Cyprus">&nbsp;</span><span class="countryName">Cyprus</span></label>
+</li>
+<li>
+<input id="country55" name="country[]" type="checkbox" value="55">
+<label for="country55"><span class="ceFlags Czech_Republic">&nbsp;</span><span class="countryName">Czech Republic</span></label>
+</li>
+<li>
+<input id="country24" name="country[]" type="checkbox" value="24">
+<label for="country24"><span class="ceFlags Denmark">&nbsp;</span><span class="countryName">Denmark</span></label>
+</li>
+<li>
+<input id="country121" name="country[]" type="checkbox" value="121">
+<label for="country121"><span class="ceFlags Ecuador">&nbsp;</span><span class="countryName">Ecuador</span></label>
+</li>
+<li>
+<input id="country59" name="country[]" type="checkbox" value="59">
+<label for="country59"><span class="ceFlags Egypt">&nbsp;</span><span class="countryName">Egypt</span></label>
+</li>
+<li>
+<input id="country89" name="country[]" type="checkbox" value="89">
+<label for="country89"><span class="ceFlags Estonia">&nbsp;</span><span class="countryName">Estonia</span></label>
+</li>
+<li>
+<input id="country72" name="country[]" type="checkbox" value="72" checked="checked">
+<label for="country72"><span class="ceFlags Europe">&nbsp;</span><span class="countryName">Euro Zone</span></label>
+</li>
+<li>
+<input id="country71" name="country[]" type="checkbox" value="71">
+<label for="country71"><span class="ceFlags Finland">&nbsp;</span><span class="countryName">Finland</span></label>
+</li>
+<li>
+<input id="country22" name="country[]" type="checkbox" value="22" checked="checked">
+<label for="country22"><span class="ceFlags France">&nbsp;</span><span class="countryName">France</span></label>
+ </li>
+<li>
+<input id="country17" name="country[]" type="checkbox" value="17" checked="checked">
+<label for="country17"><span class="ceFlags Germany">&nbsp;</span><span class="countryName">Germany</span></label>
+</li>
+<li>
+<input id="country74" name="country[]" type="checkbox" value="74">
+<label for="country74"><span class="ceFlags Ghana">&nbsp;</span><span class="countryName">Ghana</span></label>
+</li>
+<li>
+<input id="country51" name="country[]" type="checkbox" value="51">
+<label for="country51"><span class="ceFlags Greece">&nbsp;</span><span class="countryName">Greece</span></label>
+</li>
+<li>
+<input id="country39" name="country[]" type="checkbox" value="39" checked="checked">
+<label for="country39"><span class="ceFlags Hong_Kong">&nbsp;</span><span class="countryName">Hong Kong</span></label>
+</li>
+<li>
+<input id="country93" name="country[]" type="checkbox" value="93">
+<label for="country93"><span class="ceFlags Hungary">&nbsp;</span><span class="countryName">Hungary</span></label>
+</li>
+<li>
+<input id="country106" name="country[]" type="checkbox" value="106">
+<label for="country106"><span class="ceFlags Iceland">&nbsp;</span><span class="countryName">Iceland</span></label>
+</li>
+<li>
+<input id="country14" name="country[]" type="checkbox" value="14">
+<label for="country14"><span class="ceFlags India">&nbsp;</span><span class="countryName">India</span></label>
+</li>
+<li>
+<input id="country48" name="country[]" type="checkbox" value="48">
+<label for="country48"><span class="ceFlags Indonesia">&nbsp;</span><span class="countryName">Indonesia</span></label>
+</li>
+<li>
+<input id="country66" name="country[]" type="checkbox" value="66">
+<label for="country66"><span class="ceFlags Iraq">&nbsp;</span><span class="countryName">Iraq</span></label>
+</li>
+<li>
+<input id="country33" name="country[]" type="checkbox" value="33">
+<label for="country33"><span class="ceFlags Ireland">&nbsp;</span><span class="countryName">Ireland</span></label>
+</li>
+<li>
+<input id="country23" name="country[]" type="checkbox" value="23">
+<label for="country23"><span class="ceFlags Israel">&nbsp;</span><span class="countryName">Israel</span></label>
+</li>
+<li>
+<input id="country10" name="country[]" type="checkbox" value="10" checked="checked">
+<label for="country10"><span class="ceFlags Italy">&nbsp;</span><span class="countryName">Italy</span></label>
+</li>
+<li>
+<input id="country119" name="country[]" type="checkbox" value="119">
+<label for="country119"><span class="ceFlags Jamaica">&nbsp;</span><span class="countryName">Jamaica</span></label>
+</li>
+<li>
+<input id="country35" name="country[]" type="checkbox" value="35" checked="checked">
+<label for="country35"><span class="ceFlags Japan">&nbsp;</span><span class="countryName">Japan</span></label>
+</li>
+<li>
+<input id="country92" name="country[]" type="checkbox" value="92">
+<label for="country92"><span class="ceFlags Jordan">&nbsp;</span><span class="countryName">Jordan</span></label>
+</li>
+<li>
+<input id="country102" name="country[]" type="checkbox" value="102">
+<label for="country102"><span class="ceFlags Kazakhstan">&nbsp;</span><span class="countryName">Kazakhstan</span></label>
+</li>
+<li>
+<input id="country57" name="country[]" type="checkbox" value="57">
+<label for="country57"><span class="ceFlags Kenya">&nbsp;</span><span class="countryName">Kenya</span></label>
+</li>
+<li>
+<input id="country94" name="country[]" type="checkbox" value="94">
+<label for="country94"><span class="ceFlags Kuwait">&nbsp;</span><span class="countryName">Kuwait</span></label>
+</li>
+<li>
+<input id="country204" name="country[]" type="checkbox" value="204">
+<label for="country204"><span class="ceFlags Kyrgyzstan">&nbsp;</span><span class="countryName">Kyrgyzstan</span></label>
+</li>
+<li>
+<input id="country97" name="country[]" type="checkbox" value="97">
+<label for="country97"><span class="ceFlags Latvia">&nbsp;</span><span class="countryName">Latvia</span></label>
+</li>
+<li>
+<input id="country68" name="country[]" type="checkbox" value="68">
+<label for="country68"><span class="ceFlags Lebanon">&nbsp;</span><span class="countryName">Lebanon</span></label>
+</li>
+<li>
+<input id="country96" name="country[]" type="checkbox" value="96">
+<label for="country96"><span class="ceFlags Lithuania">&nbsp;</span><span class="countryName">Lithuania</span></label>
+</li>
+<li>
+<input id="country103" name="country[]" type="checkbox" value="103">
+<label for="country103"><span class="ceFlags Luxembourg">&nbsp;</span><span class="countryName">Luxembourg</span></label>
+</li>
+<li>
+<input id="country111" name="country[]" type="checkbox" value="111">
+<label for="country111"><span class="ceFlags Malawi">&nbsp;</span><span class="countryName">Malawi</span></label>
+</li>
+<li>
+<input id="country42" name="country[]" type="checkbox" value="42">
+<label for="country42"><span class="ceFlags Malaysia">&nbsp;</span><span class="countryName">Malaysia</span></label>
+</li>
+<li>
+<input id="country109" name="country[]" type="checkbox" value="109">
+<label for="country109"><span class="ceFlags Malta">&nbsp;</span><span class="countryName">Malta</span></label>
+</li>
+<li>
+<input id="country188" name="country[]" type="checkbox" value="188">
+<label for="country188"><span class="ceFlags Mauritius">&nbsp;</span><span class="countryName">Mauritius</span></label>
+</li>
+<li>
+<input id="country7" name="country[]" type="checkbox" value="7">
+<label for="country7"><span class="ceFlags Mexico">&nbsp;</span><span class="countryName">Mexico</span></label>
+</li>
+<li>
+<input id="country139" name="country[]" type="checkbox" value="139">
+<label for="country139"><span class="ceFlags Mongolia">&nbsp;</span><span class="countryName">Mongolia</span></label>
+</li>
+<li>
+<input id="country247" name="country[]" type="checkbox" value="247">
+<label for="country247"><span class="ceFlags Montenegro">&nbsp;</span><span class="countryName">Montenegro</span></label>
+</li>
+<li>
+<input id="country105" name="country[]" type="checkbox" value="105">
+<label for="country105"><span class="ceFlags Morocco">&nbsp;</span><span class="countryName">Morocco</span></label>
+</li>
+<li>
+<input id="country82" name="country[]" type="checkbox" value="82">
+<label for="country82"><span class="ceFlags Mozambique">&nbsp;</span><span class="countryName">Mozambique</span></label>
+</li>
+<li>
+<input id="country172" name="country[]" type="checkbox" value="172">
+<label for="country172"><span class="ceFlags Namibia">&nbsp;</span><span class="countryName">Namibia</span></label>
+</li>
+<li>
+<input id="country21" name="country[]" type="checkbox" value="21">
+<label for="country21"><span class="ceFlags Netherlands">&nbsp;</span><span class="countryName">Netherlands</span></label>
+</li>
+<li>
+<input id="country43" name="country[]" type="checkbox" value="43" checked="checked">
+<label for="country43"><span class="ceFlags New_Zealand">&nbsp;</span><span class="countryName">New Zealand</span></label>
+</li>
+<li>
+<input id="country20" name="country[]" type="checkbox" value="20">
+<label for="country20"><span class="ceFlags Nigeria">&nbsp;</span><span class="countryName">Nigeria</span></label>
+</li>
+<li>
+<input id="country60" name="country[]" type="checkbox" value="60">
+<label for="country60"><span class="ceFlags Norway">&nbsp;</span><span class="countryName">Norway</span></label>
+</li>
+<li>
+<input id="country87" name="country[]" type="checkbox" value="87">
+<label for="country87"><span class="ceFlags Oman">&nbsp;</span><span class="countryName">Oman</span></label>
+</li>
+<li>
+<input id="country44" name="country[]" type="checkbox" value="44">
+<label for="country44"><span class="ceFlags Pakistan">&nbsp;</span><span class="countryName">Pakistan</span></label>
+</li>
+<li>
+<input id="country193" name="country[]" type="checkbox" value="193">
+<label for="country193"><span class="ceFlags Palestine">&nbsp;</span><span class="countryName">Palestinian Territory</span></label>
+</li>
+<li>
+<input id="country148" name="country[]" type="checkbox" value="148">
+<label for="country148"><span class="ceFlags Paraguay">&nbsp;</span><span class="countryName">Paraguay</span></label>
+</li>
+<li>
+<input id="country125" name="country[]" type="checkbox" value="125">
+<label for="country125"><span class="ceFlags Peru">&nbsp;</span><span class="countryName">Peru</span></label>
+</li>
+<li>
+<input id="country45" name="country[]" type="checkbox" value="45">
+<label for="country45"><span class="ceFlags Philippines">&nbsp;</span><span class="countryName">Philippines</span></label>
+</li>
+<li>
+<input id="country53" name="country[]" type="checkbox" value="53">
+<label for="country53"><span class="ceFlags Poland">&nbsp;</span><span class="countryName">Poland</span></label>
+</li>
+<li>
+<input id="country38" name="country[]" type="checkbox" value="38">
+<label for="country38"><span class="ceFlags Portugal">&nbsp;</span><span class="countryName">Portugal</span></label>
+</li>
+<li>
+<input id="country170" name="country[]" type="checkbox" value="170">
+<label for="country170"><span class="ceFlags Qatar">&nbsp;</span><span class="countryName">Qatar</span></label>
+</li>
+<li>
+<input id="country100" name="country[]" type="checkbox" value="100">
+<label for="country100"><span class="ceFlags Romania">&nbsp;</span><span class="countryName">Romania</span></label>
+</li>
+<li>
+<input id="country56" name="country[]" type="checkbox" value="56">
+<label for="country56"><span class="ceFlags Russian_Federation">&nbsp;</span><span class="countryName">Russia</span></label>
+</li>
+<li>
+<input id="country80" name="country[]" type="checkbox" value="80">
+<label for="country80"><span class="ceFlags Rwanda">&nbsp;</span><span class="countryName">Rwanda</span></label>
+</li>
+<li>
+<input id="country52" name="country[]" type="checkbox" value="52">
+<label for="country52"><span class="ceFlags Saudi_Arabia">&nbsp;</span><span class="countryName">Saudi Arabia</span></label>
+</li>
+<li>
+<input id="country238" name="country[]" type="checkbox" value="238">
+<label for="country238"><span class="ceFlags Serbia">&nbsp;</span><span class="countryName">Serbia</span></label>
+</li>
+<li>
+<input id="country36" name="country[]" type="checkbox" value="36">
+<label for="country36"><span class="ceFlags Singapore">&nbsp;</span><span class="countryName">Singapore</span></label>
+</li>
+<li>
+<input id="country90" name="country[]" type="checkbox" value="90">
+<label for="country90"><span class="ceFlags Slovakia">&nbsp;</span><span class="countryName">Slovakia</span></label>
+</li>
+<li>
+<input id="country112" name="country[]" type="checkbox" value="112">
+<label for="country112"><span class="ceFlags Slovenia">&nbsp;</span><span class="countryName">Slovenia</span></label>
+</li>
+<li>
+<input id="country110" name="country[]" type="checkbox" value="110">
+<label for="country110"><span class="ceFlags South_Africa">&nbsp;</span><span class="countryName">South Africa</span></label>
+</li>
+<li>
+<input id="country11" name="country[]" type="checkbox" value="11">
+<label for="country11"><span class="ceFlags South_Korea">&nbsp;</span><span class="countryName">South Korea</span></label>
+</li>
+<li>
+<input id="country26" name="country[]" type="checkbox" value="26" checked="checked">
+<label for="country26"><span class="ceFlags Spain">&nbsp;</span><span class="countryName">Spain</span></label>
+</li>
+<li>
+<input id="country162" name="country[]" type="checkbox" value="162">
+<label for="country162"><span class="ceFlags Sri_Lanka">&nbsp;</span><span class="countryName">Sri Lanka</span></label>
+</li>
+<li>
+<input id="country9" name="country[]" type="checkbox" value="9">
+<label for="country9"><span class="ceFlags Sweden">&nbsp;</span><span class="countryName">Sweden</span></label>
+</li>
+<li>
+ <input id="country12" name="country[]" type="checkbox" value="12" checked="checked">
+<label for="country12"><span class="ceFlags Switzerland">&nbsp;</span><span class="countryName">Switzerland</span></label>
+</li>
+<li>
+<input id="country46" name="country[]" type="checkbox" value="46">
+<label for="country46"><span class="ceFlags Taiwan">&nbsp;</span><span class="countryName">Taiwan</span></label>
+</li>
+<li>
+<input id="country85" name="country[]" type="checkbox" value="85">
+<label for="country85"><span class="ceFlags Tanzania">&nbsp;</span><span class="countryName">Tanzania</span></label>
+</li>
+<li>
+<input id="country41" name="country[]" type="checkbox" value="41">
+<label for="country41"><span class="ceFlags Thailand">&nbsp;</span><span class="countryName">Thailand</span></label>
+</li>
+<li>
+<input id="country202" name="country[]" type="checkbox" value="202">
+<label for="country202"><span class="ceFlags Tunisia">&nbsp;</span><span class="countryName">Tunisia</span></label>
+</li>
+<li>
+<input id="country63" name="country[]" type="checkbox" value="63">
+<label for="country63"><span class="ceFlags Turkey">&nbsp;</span><span class="countryName">Türkiye</span></label>
+</li>
+<li>
+<input id="country123" name="country[]" type="checkbox" value="123">
+<label for="country123"><span class="ceFlags Uganda">&nbsp;</span><span class="countryName">Uganda</span></label>
+</li>
+<li>
+<input id="country61" name="country[]" type="checkbox" value="61">
+<label for="country61"><span class="ceFlags Ukraine">&nbsp;</span><span class="countryName">Ukraine</span></label>
+</li>
+<li>
+<input id="country143" name="country[]" type="checkbox" value="143">
+<label for="country143"><span class="ceFlags Dubai">&nbsp;</span><span class="countryName">United Arab Emirates</span></label>
+</li>
+<li>
+<input id="country4" name="country[]" type="checkbox" value="4" checked="checked">
+<label for="country4"><span class="ceFlags UK">&nbsp;</span><span class="countryName">United Kingdom</span></label>
+</li>
+<li>
+<input id="country5" name="country[]" type="checkbox" value="5" checked="checked">
+<label for="country5"><span class="ceFlags USA">&nbsp;</span><span class="countryName">United States</span></label>
+</li>
+<li>
+<input id="country180" name="country[]" type="checkbox" value="180">
+<label for="country180"><span class="ceFlags Uruguay">&nbsp;</span><span class="countryName">Uruguay</span></label>
+</li>
+<li>
+<input id="country168" name="country[]" type="checkbox" value="168">
+<label for="country168"><span class="ceFlags Uzbekistan">&nbsp;</span><span class="countryName">Uzbekistan</span></label>
+</li>
+<li>
+<input id="country138" name="country[]" type="checkbox" value="138">
+<label for="country138"><span class="ceFlags Venezuela">&nbsp;</span><span class="countryName">Venezuela</span></label>
+</li>
+<li>
+<input id="country178" name="country[]" type="checkbox" value="178">
+<label for="country178"><span class="ceFlags Vietnam">&nbsp;</span><span class="countryName">Vietnam</span></label>
+</li>
+<li>
+<input id="country84" name="country[]" type="checkbox" value="84">
+<label for="country84"><span class="ceFlags Zambia">&nbsp;</span><span class="countryName">Zambia</span></label>
+</li>
+<li>
+<input id="country75" name="country[]" type="checkbox" value="75">
+<label for="country75"><span class="ceFlags Zimbabwe">&nbsp;</span><span class="countryName">Zimbabwe</span></label>
+</li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<div class="ecoFilterBox">
+<div class="left">
+<span class="arial_14 bold">Time:</span>
+</div>
+<div class="right">
+<fieldset>
+<input type="radio" id="timeFiltertimeRemain" name="timeFilter" value="timeRemain" checked="checked" onclick="javascript:switchTimeFilter();">
+<label for="timeFiltertimeRemain">Display time remaining till announcement</label>
+</fieldset>
+<fieldset>
+<input type="radio" id="timeFiltertimeOnly" name="timeFilter" value="timeOnly" onclick="javascript:switchTimeFilter();">
+<label for="timeFiltertimeOnly">Display time only</label>
+</fieldset>
+</div>
+<div class="clear"></div>
+</div>
+<div id="ecoFilterBoxCategory" class="ecoFilterBox">
+<div class="left">
+<p class="arial_14 bold">Category:</p>
+<a href="javascript:void(0);" id="selectAllCategory" onclick="selectAll('category[]');">Select All</a><br>
+<a href="javascript:void(0);" id="clearAllCategory" onclick="clearAll('category[]');">Clear</a>
+</div>
+<div class="right">
+<ul>
+<li class=""><input id="category_employment" name="category[]" type="checkbox" value="_employment"><label for="category_employment">Employment</label></li>
+<li class=""><input id="category_economicActivity" name="category[]" type="checkbox" value="_economicActivity"><label for="category_economicActivity">Economic Activity</label></li>
+<li class=""><input id="category_inflation" name="category[]" type="checkbox" value="_inflation"><label for="category_inflation">Inflation</label></li>
+<li class=""><input id="category_credit" name="category[]" type="checkbox" value="_credit"><label for="category_credit">Credit</label></li>
+<li class=""><input id="category_centralBanks" name="category[]" type="checkbox" value="_centralBanks"><label for="category_centralBanks">Central Banks</label></li>
+<li class=""><input id="category_confidenceIndex" name="category[]" type="checkbox" value="_confidenceIndex"><label for="category_confidenceIndex">Confidence Index</label></li>
+<li class=""><input id="category_balance" name="category[]" type="checkbox" value="_balance"><label for="category_balance">Balance</label></li>
+<li class=""><input id="category_Bonds" name="category[]" type="checkbox" value="_Bonds"><label for="category_Bonds">Bonds</label></li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<div id="ecoFilterBoxImportance" class="ecoFilterBox">
+<div class="left">
+<span class="arial_14 bold">Importance:</span>
+</div>
+<div class="right">
+<ul>
+<li class="firstRow"><input type="checkbox" id="importance1" name="importance[]" value="1"><label><i class="newSiteIconsSprite grayFullBullishIcon">&nbsp;</i><i class="newSiteIconsSprite whiteEmptyBullishIcon">&nbsp;</i><i class="newSiteIconsSprite whiteEmptyBullishIcon">&nbsp;</i></label></li>
+<li class="firstRow"><input type="checkbox" id="importance2" name="importance[]" value="2"><label><i class="newSiteIconsSprite grayFullBullishIcon">&nbsp;</i><i class="newSiteIconsSprite grayFullBullishIcon">&nbsp;</i><i class="newSiteIconsSprite whiteEmptyBullishIcon">&nbsp;</i></label></li>
+<li class="firstRow"><input type="checkbox" id="importance3" name="importance[]" value="3"><label><i class="newSiteIconsSprite grayFullBullishIcon">&nbsp;</i><i class="newSiteIconsSprite grayFullBullishIcon">&nbsp;</i><i class="newSiteIconsSprite grayFullBullishIcon">&nbsp;</i></label></li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+<div id="ecoFilterBoxSubmit" class="ecoFilterBox submitBox align_center">
+<a href="javascript:void(0);" onclick="economicCalendarFormSubmit();" id="ecSubmitButton" class="newBtn Arrow LightGray">Apply</a> <a href="javascript:void(0);" id="filterRestoreDefaults" class="restore"><span class="newSiteIconsSprite ecoFilterRestoreIcon"></span>Restore Default Settings</a>
+</div>
 </div>
 
-<div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;">
-	<span style="font-size: 11px;color: #333333;text-decoration: none;">
-	Real Time Economic Calendar provided by 
-		<a href="https://www.investing.com/" rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;" class="underline_link">
-		Investing.com
-		</a>
-		.
-	</span>
+<table id="ecEventsTable" class="genTable closedTable ecoCalTable">
+<thead>
+<tr>
+<th class="time">Time</th>
+<th class="flagCur">Cur.</th>
+<th class="sentiment">Imp.</th>
+<th class="event">Event</th>
+<th class="act">Actual</th>
+<th class="fore">Forecast</th>
+<th class="prev">Previous</th>
+<th class="diamond"></th>
+</tr>
+</thead>
+<tbody pagestartat="1677913560000">
+<tr>
+<td colspan="8" class="theDay" id="theDay1677888000">Saturday, March 4, 2023</td>
+</tr>
+<tr id="eventRowId_468922" event_attr_id="1652" event_timestamp="2023-03-03 18:00:00" onclick="javascript:changeEventDisplay(468922, this, 'overview');">
+<td class="first left time" title="Event data was released 13h 57m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-786" evtstrttime="00:00">00:00</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">U.S. Baker Hughes Oil Rig Count</td>
+<td class="bold act blackFont event-468922-actual" title="" id="eventActual_468922">592</td> <td class="fore" id="eventForecast_468922 event-468922-forecast">&nbsp;</td> <td class="prev blackFont event-468922-previous" id="eventPrevious_468922">600</td>
+<td class="diamond" id="eventRevisedFrom_468922">&nbsp;</td> </tr>
+<tr id="eventInfo468922" class="noHover displayNone">
+<td id="eventInfoTd468922" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468922"></div>
+</td>
+</tr>
+<tr id="eventRowId_468923" event_attr_id="1810" event_timestamp="2023-03-03 18:00:00" onclick="javascript:changeEventDisplay(468923, this, 'overview');">
+<td class="first left time" title="Event data was released 13h 57m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-786" evtstrttime="00:00">00:00</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">U.S. Baker Hughes Total Rig Count</td>
+<td class="bold act blackFont event-468923-actual" title="" id="eventActual_468923">749</td> <td class="fore" id="eventForecast_468923 event-468923-forecast">&nbsp;</td> <td class="prev blackFont event-468923-previous" id="eventPrevious_468923">753</td>
+<td class="diamond" id="eventRevisedFrom_468923">&nbsp;</td> </tr>
+<tr id="eventInfo468923" class="noHover displayNone">
+<td id="eventInfoTd468923" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468923"></div>
+</td>
+</tr>
+<tr id="eventRowId_468928" event_attr_id="1835" event_timestamp="2023-03-03 20:00:00" onclick="javascript:changeEventDisplay(468928, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 57m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-666" evtstrttime="02:00">02:00</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">FOMC Member Bowman Speaks &nbsp;<span class="audioIconNew newSiteIconsSprite" title="Speech">&nbsp;</span></td>
+<td class="bold act blackFont event-468928-actual" title="" id="eventActual_468928">&nbsp;</td> <td class="fore" id="eventForecast_468928 event-468928-forecast">&nbsp;</td> <td class="prev blackFont event-468928-previous" id="eventPrevious_468928">&nbsp;</td>
+<td class="diamond" id="eventRevisedFrom_468928">&nbsp;</td> </tr>
+<tr id="eventInfo468928" class="noHover displayNone">
+<td id="eventInfoTd468928" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468928"></div>
+</td>
+</tr>
+<tr id="eventRowId_468875" event_attr_id="1612" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468875, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United Kingdom" class=" ceFlags United_Kingdom">&nbsp;</span> GBP</td> <td class="sentiment" title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC GBP speculative net positions</td>
+<td class="bold act blackFont event-468875-actual" title="" id="eventActual_468875">-14.1K</td> <td class="fore" id="eventForecast_468875 event-468875-forecast">&nbsp;</td> <td class="prev blackFont event-468875-previous" id="eventPrevious_468875">-18.3K</td>
+<td class="diamond" id="eventRevisedFrom_468875">&nbsp;</td> </tr>
+<tr id="eventInfo468875" class="noHover displayNone">
+<td id="eventInfoTd468875" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468875"></div>
+</td>
+</tr>
+<tr id="eventRowId_468879" event_attr_id="1821" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468879, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC Aluminium speculative net positions</td>
+<td class="bold act blackFont event-468879-actual" title="" id="eventActual_468879">5.5K</td> <td class="fore" id="eventForecast_468879 event-468879-forecast">&nbsp;</td> <td class="prev blackFont event-468879-previous" id="eventPrevious_468879">5.9K</td>
+<td class="diamond" id="eventRevisedFrom_468879">&nbsp;</td> </tr>
+<tr id="eventInfo468879" class="noHover displayNone">
+<td id="eventInfoTd468879" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468879"></div>
+</td>
+</tr>
+<tr id="eventRowId_468880" event_attr_id="1620" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468880, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC Copper speculative net positions</td>
+<td class="bold act blackFont event-468880-actual" title="" id="eventActual_468880">2.5K</td> <td class="fore" id="eventForecast_468880 event-468880-forecast">&nbsp;</td> <td class="prev blackFont event-468880-previous" id="eventPrevious_468880">17.2K</td>
+<td class="diamond" id="eventRevisedFrom_468880">&nbsp;</td> </tr>
+<tr id="eventInfo468880" class="noHover displayNone">
+<td id="eventInfoTd468880" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468880"></div>
+</td>
+</tr>
+<tr id="eventRowId_468886" event_attr_id="1813" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468886, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC Corn speculative net positions</td>
+<td class="bold act blackFont event-468886-actual" title="" id="eventActual_468886">282.4K</td> <td class="fore" id="eventForecast_468886 event-468886-forecast">&nbsp;</td> <td class="prev blackFont event-468886-previous" id="eventPrevious_468886">296.8K</td>
+<td class="diamond" id="eventRevisedFrom_468886">&nbsp;</td> </tr>
+<tr id="eventInfo468886" class="noHover displayNone">
+<td id="eventInfoTd468886" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468886"></div>
+</td>
+</tr>
+<tr id="eventRowId_468883" event_attr_id="1653" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468883, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC Crude Oil speculative net positions</td>
+<td class="bold act blackFont event-468883-actual" title="" id="eventActual_468883">224.2K</td> <td class="fore" id="eventForecast_468883 event-468883-forecast">&nbsp;</td> <td class="prev blackFont event-468883-previous" id="eventPrevious_468883">243.8K</td>
+<td class="diamond" id="eventRevisedFrom_468883">&nbsp;</td> </tr>
+<tr id="eventInfo468883" class="noHover displayNone">
+<td id="eventInfoTd468883" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468883"></div>
+</td>
+</tr>
+<tr id="eventRowId_468881" event_attr_id="1618" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468881, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC Gold speculative net positions</td>
+<td class="bold act blackFont event-468881-actual" title="" id="eventActual_468881">128.8K</td> <td class="fore" id="eventForecast_468881 event-468881-forecast">&nbsp;</td> <td class="prev blackFont event-468881-previous" id="eventPrevious_468881">160.3K</td>
+<td class="diamond" id="eventRevisedFrom_468881">&nbsp;</td> </tr>
+<tr id="eventInfo468881" class="noHover displayNone">
+<td id="eventInfoTd468881" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468881"></div>
+</td>
+</tr>
+<tr id="eventRowId_468873" event_attr_id="1959" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468873, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC Nasdaq 100 speculative net positions</td>
+<td class="bold act blackFont event-468873-actual" title="" id="eventActual_468873">-14.9K</td> <td class="fore" id="eventForecast_468873 event-468873-forecast">&nbsp;</td> <td class="prev blackFont event-468873-previous" id="eventPrevious_468873">-15.9K</td>
+<td class="diamond" id="eventRevisedFrom_468873">&nbsp;</td> </tr>
+<tr id="eventInfo468873" class="noHover displayNone">
+<td id="eventInfoTd468873" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468873"></div>
+</td>
+</tr>
+<tr id="eventRowId_468884" event_attr_id="1820" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468884, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC Natural Gas speculative net positions</td>
+<td class="bold act blackFont event-468884-actual" title="" id="eventActual_468884">-178.1K</td> <td class="fore" id="eventForecast_468884 event-468884-forecast">&nbsp;</td> <td class="prev blackFont event-468884-previous" id="eventPrevious_468884">-169.2K</td>
+<td class="diamond" id="eventRevisedFrom_468884">&nbsp;</td> </tr>
+<tr id="eventInfo468884" class="noHover displayNone">
+<td id="eventInfoTd468884" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468884"></div>
+</td>
+</tr>
+<tr id="eventRowId_468871" event_attr_id="1619" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468871, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC S&amp;P 500 speculative net positions</td>
+<td class="bold act blackFont event-468871-actual" title="" id="eventActual_468871">-217.5K</td> <td class="fore" id="eventForecast_468871 event-468871-forecast">&nbsp;</td> <td class="prev blackFont event-468871-previous" id="eventPrevious_468871">-222.3K</td>
+<td class="diamond" id="eventRevisedFrom_468871">&nbsp;</td> </tr>
+<tr id="eventInfo468871" class="noHover displayNone">
+<td id="eventInfoTd468871" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468871"></div>
+</td>
+</tr>
+<tr id="eventRowId_468882" event_attr_id="1621" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468882, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC Silver speculative net positions</td>
+<td class="bold act blackFont event-468882-actual" title="" id="eventActual_468882">13.5K</td> <td class="fore" id="eventForecast_468882 event-468882-forecast">&nbsp;</td> <td class="prev blackFont event-468882-previous" id="eventPrevious_468882">27.3K</td>
+<td class="diamond" id="eventRevisedFrom_468882">&nbsp;</td> </tr>
+<tr id="eventInfo468882" class="noHover displayNone">
+<td id="eventInfoTd468882" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468882"></div>
+</td>
+</tr>
+<tr id="eventRowId_468887" event_attr_id="1811" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468887, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC Soybeans speculative net positions</td>
+<td class="bold act blackFont event-468887-actual" title="" id="eventActual_468887">174.8K</td> <td class="fore" id="eventForecast_468887 event-468887-forecast">&nbsp;</td> <td class="prev blackFont event-468887-previous" id="eventPrevious_468887">178.4K</td>
+<td class="diamond" id="eventRevisedFrom_468887">&nbsp;</td> </tr>
+<tr id="eventInfo468887" class="noHover displayNone">
+<td id="eventInfoTd468887" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468887"></div>
+</td>
+</tr>
+<tr id="eventRowId_468885" event_attr_id="1812" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468885, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC Wheat speculative net positions</td>
+<td class="bold act blackFont event-468885-actual" title="" id="eventActual_468885">-46.3K</td> <td class="fore" id="eventForecast_468885 event-468885-forecast">&nbsp;</td> <td class="prev blackFont event-468885-previous" id="eventPrevious_468885">-40.1K</td>
+<td class="diamond" id="eventRevisedFrom_468885">&nbsp;</td> </tr>
+<tr id="eventInfo468885" class="noHover displayNone">
+<td id="eventInfoTd468885" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468885"></div>
+</td>
+</tr>
+<tr id="eventRowId_468877" event_attr_id="1613" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468877, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="Canada" class=" ceFlags Canada">&nbsp;</span> CAD</td> <td class="sentiment" title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC CAD speculative net positions</td>
+<td class="bold act blackFont event-468877-actual" title="" id="eventActual_468877">-33.1K</td> <td class="fore" id="eventForecast_468877 event-468877-forecast">&nbsp;</td> <td class="prev blackFont event-468877-previous" id="eventPrevious_468877">-30.2K</td>
+<td class="diamond" id="eventRevisedFrom_468877">&nbsp;</td> </tr>
+<tr id="eventInfo468877" class="noHover displayNone">
+<td id="eventInfoTd468877" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468877"></div>
+</td>
+</tr>
+<tr id="eventRowId_468869" event_attr_id="1617" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468869, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="Switzerland" class=" ceFlags Switzerland">&nbsp;</span> CHF</td> <td class="sentiment" title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC CHF speculative net positions</td>
+<td class="bold act blackFont event-468869-actual" title="" id="eventActual_468869">-6.4K</td> <td class="fore" id="eventForecast_468869 event-468869-forecast">&nbsp;</td> <td class="prev blackFont event-468869-previous" id="eventPrevious_468869">-8.3K</td>
+<td class="diamond" id="eventRevisedFrom_468869">&nbsp;</td> </tr>
+<tr id="eventInfo468869" class="noHover displayNone">
+<td id="eventInfoTd468869" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468869"></div>
+</td>
+</tr>
+<tr id="eventRowId_468868" event_attr_id="1615" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468868, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="Australia" class=" ceFlags Australia">&nbsp;</span> AUD</td> <td class="sentiment" title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC AUD speculative net positions</td>
+<td class="bold act blackFont event-468868-actual" title="" id="eventActual_468868">-28.1K</td> <td class="fore" id="eventForecast_468868 event-468868-forecast">&nbsp;</td> <td class="prev blackFont event-468868-previous" id="eventPrevious_468868">-30.6K</td>
+<td class="diamond" id="eventRevisedFrom_468868">&nbsp;</td> </tr>
+<tr id="eventInfo468868" class="noHover displayNone">
+<td id="eventInfoTd468868" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468868"></div>
+</td>
+</tr>
+<tr id="eventRowId_468867" event_attr_id="1614" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468867, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="Japan" class=" ceFlags Japan">&nbsp;</span> JPY</td> <td class="sentiment" title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC JPY speculative net positions</td>
+<td class="bold act blackFont event-468867-actual" title="" id="eventActual_468867">-29.1K</td> <td class="fore" id="eventForecast_468867 event-468867-forecast">&nbsp;</td> <td class="prev blackFont event-468867-previous" id="eventPrevious_468867">-20.1K</td>
+<td class="diamond" id="eventRevisedFrom_468867">&nbsp;</td> </tr>
+<tr id="eventInfo468867" class="noHover displayNone">
+<td id="eventInfoTd468867" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468867"></div>
+</td>
+</tr>
+<tr id="eventRowId_468876" event_attr_id="1616" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468876, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="New Zealand" class=" ceFlags New_Zealand">&nbsp;</span> NZD</td> <td class="sentiment" title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC NZD speculative net positions</td>
+<td class="bold act blackFont event-468876-actual" title="" id="eventActual_468876">10.8K</td> <td class="fore" id="eventForecast_468876 event-468876-forecast">&nbsp;</td> <td class="prev blackFont event-468876-previous" id="eventPrevious_468876">8.4K</td>
+<td class="diamond" id="eventRevisedFrom_468876">&nbsp;</td> </tr>
+<tr id="eventInfo468876" class="noHover displayNone">
+<td id="eventInfoTd468876" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468876"></div>
+</td>
+</tr>
+<tr id="eventRowId_468878" event_attr_id="1611" event_timestamp="2023-03-03 20:30:00" onclick="javascript:changeEventDisplay(468878, this, 'overview');">
+<td class="first left time" title="Event data was released 11h 27m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-636" evtstrttime="02:30">02:30</td>
+<td class="flagCur"><span title="Euro Zone" class=" ceFlags Europe">&nbsp;</span> EUR</td> <td class="sentiment" title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">CFTC EUR speculative net positions</td>
+<td class="bold act blackFont event-468878-actual" title="" id="eventActual_468878">165.0K</td> <td class="fore" id="eventForecast_468878 event-468878-forecast">&nbsp;</td> <td class="prev blackFont event-468878-previous" id="eventPrevious_468878">150.5K</td>
+<td class="diamond" id="eventRevisedFrom_468878">&nbsp;</td> </tr>
+<tr id="eventInfo468878" class="noHover displayNone">
+<td id="eventInfoTd468878" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468878"></div>
+</td>
+</tr>
+<tr id="eventRowId_468829" event_attr_id="1775" event_timestamp="2023-03-03 21:45:00" onclick="javascript:changeEventDisplay(468829, this, 'overview');">
+<td class="first left time" title="Event data was released 10h 12m ago" evtpagestrttimeseconds="-10" evtpagestrttime="-561" evtstrttime="03:45">03:45</td>
+<td class="flagCur"><span title="United States" class=" ceFlags United_States">&nbsp;</span> USD</td> <td class="sentiment" title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i></td> <td class="left event">FOMC Member Barkin Speaks &nbsp;<span class="audioIconNew newSiteIconsSprite" title="Speech">&nbsp;</span></td>
+<td class="bold act blackFont event-468829-actual" title="" id="eventActual_468829">&nbsp;</td> <td class="fore" id="eventForecast_468829 event-468829-forecast">&nbsp;</td> <td class="prev blackFont event-468829-previous" id="eventPrevious_468829">&nbsp;</td>
+<td class="diamond" id="eventRevisedFrom_468829">&nbsp;</td> </tr>
+<tr id="eventInfo468829" class="noHover displayNone">
+<td id="eventInfoTd468829" colspan="8">
+<div class="displayNone eventDetailWrap" id="eventDivWrapper468829"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></form>
+<div class="clear"></div>
+<div id="ecoCalLegend" class="ecoCalLegend">
+<div class="bold">Legend</div>
+<dl class="ecoCalLegend_1">
+<dt class="float_lang_base_1 align_center"><span class="newSiteIconsSprite audioIconNew" title="Speech"></span></dt><dd class="arial_12">Speech</dd>
+<dt class="float_lang_base_1 align_center"><span class="newSiteIconsSprite smallGrayP" title="Preliminary Release"></span></dt><dd class="arial_12">Preliminary Release</dd>
+<dt class="float_lang_base_1 align_center"><span class="diamondNewIcon inlineblock middle" title="Revised Release"></span></dt><dd class="arial_12">Revised Release</dd>
+</dl>
+<dl class="ecoCalLegend_2">
+<dt class="float_lang_base_1 align_center"><span class="newSiteIconsSprite sandClock middle" title="Retrieving Data"></span></dt><dd class="arial_12">Retrieving Data</dd>
+
+</dl>
+<ul class="ecoCalLegend_3">
+<li title="Low Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><span class="arial_12">Low Volatility Expected</span></li>
+<li title="Moderate Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayEmptyBullishIcon middle"></i><span class="arial_12">Moderate Volatility Expected</span></li>
+<li title="High Volatility Expected"><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><i class="newSiteIconsSprite grayFullBullishIcon middle"></i><span class="arial_12">High Volatility Expected</span></li>
+</ul>
+<div class="clear"></div>
 </div>
+<div id="economicCalendarLoading" style="">
+<img src="https://i-invdn-com.investing.com/images/ajax-loader-big.gif" alt="">
+</div>
+<link rel="stylesheet" href="https://i-invdn-com.investing.com/css/datepicker_v8.css" type="text/css">
+<script type="text/javascript">
+var curlang=1;
+    <!--
+    var isRtl = '';
+    //-->
+</script>
+<script type="text/javascript" src="https://i-invdn-com.investing.com/js/datepicker-1.6.js"></script>
+<script type="text/javascript" src="https://i-invdn-com.investing.com/js/eye.js"></script>
+<script type="text/javascript">
+
+var timeFilter = 1;
+
+function changeEventDisplay(id, clickedEventTr, selectedTab) {
+    var trId = '#eventInfo' + id;
+    if ($(trId).is(':visible')) {
+        $('#eventDivWrapper' + id).slideUp('fast', function(){
+            $(clickedEventTr).removeClass('openedTr');
+            $(trId).hide();
+        });
+
+    } else {
+        var eventAttrId = $(clickedEventTr).attr("event_attr_ID");
+        var eventTs = $(clickedEventTr).attr("event_timestamp");
+        $.ajax({
+            url: "/ajax.php", // /economic-calendar/event
+            type: "POST",
+            data: {"action": "event", "eventID": id, "event_attr_ID": eventAttrId, "event_timestamp": eventTs, "selectedTab": selectedTab, "lang":1, "hid": 0            },
+            beforeSend: function() {
+                $('#eventInfoTd' + id).addClass("center");
+                $('#eventDivWrapper' + id).html('<div class="loading-responsive medium-circle"></div>');//medium-circle
+                $(trId).show();
+                $('#eventDivWrapper' + id).slideDown('fast');
+                $(clickedEventTr).addClass('openedTr');
+				setTimeout(function(){},100);
+            },
+            complete: function() {
+
+            },
+            success: function(data)
+            {
+                $('#eventDivWrapper' + id).hide();
+                $('#eventInfoTd' + id).addClass("center");
+                $('#eventDivWrapper' + id).html(data);
+                $('#eventDivWrapper' + id).slideDown('fast');
+            }
+        });
+    }
+}
+
+var ecEvent = {
+
+    "changeEventTabSelection": function(selectedTabTitleElement, selectedTabAction, eventId, params)
+    {
+        $(selectedTabTitleElement).siblings('[id^="eventTabTitle_"]').removeClass('selected');
+        $(selectedTabTitleElement).addClass('selected');
+        var tabDivId = '#eventTabDiv_' + selectedTabAction + '_' + eventId;
+        $(tabDivId).siblings('[id^="eventTabDiv_"]').removeClass('block').addClass('displayNone');
+        switch(selectedTabAction) {
+            case 'chart':
+                if( $(tabDivId).html() === '' ) {
+                    $.getJSON('/events_charts' + '/us/' + params.event_attr_ID + '.json', function(data) {
+                        $(tabDivId).removeClass('displayNone').addClass('block');
+                        ecEvent[tabDivId] = true;
+                        new EventChart(data, $(tabDivId).attr('id'), params);
+                    });
+                } else {
+                    $(tabDivId).removeClass('displayNone').addClass('block');
+                }
+                break;
+            default:
+                if (typeof this[tabDivId] === 'undefined' || this[tabDivId] == false ) {
+                    params["eventID"] = eventId;
+                    params["lang"] = 1;
+                    params['action'] = selectedTabAction;
+                    $.ajax({
+                        //url: "/economic-calendar/" + selectedTabAction,
+                    	url: "/ajax.php",
+                        type: "POST",
+                        data: params,
+                        beforeSend: function() {
+                            $("#eventTabDiv_loader_" + eventId).removeClass("displayNone");
+                        },
+                        complete: function() {
+                            $("#eventTabDiv_loader_" + eventId).addClass("displayNone");
+                        },
+                        success: function(data) {
+                            $(tabDivId).html(data);
+                            $(tabDivId).removeClass('displayNone').addClass('block');
+                            ecEvent[tabDivId] = true;
+                            ecEvent[tabDivId +'_data'] = data;
+                        }
+                    });
+                } else {
+                    $(tabDivId).html(this[tabDivId + '_data']);
+                    $(tabDivId).removeClass('displayNone').addClass('block');
+                }
+                break;
+        }//end action switch
+    },
+
+    "moreHistory": function(parentEventDataId, moreHistoryDivElement)
+    {
+        var anchorElement = $(moreHistoryDivElement).find('a:first-child');
+        if ($(anchorElement).attr('disabled') === undefined) {
+            $(anchorElement).attr('disabled', 'disabled');
+            var tableId = 'eventHistoryTable' + parentEventDataId;
+            var historicEventTr = $('#' + tableId + ' tr[id^=historicEvent_]:last-child').last();
+            var historicEventTrId = $(historicEventTr).attr('id');
+            var historicEventId = historicEventTrId.replace('historicEvent_', '');
+            var eventAttrId = $(historicEventTr).attr("event_attr_ID");
+            var lastEventTs =  $(historicEventTr).attr("event_timestamp");
+            $.ajax({
+                url: "/ajax.php", // /economic-calendar/more-history
+                type: "POST",
+                dataType: 'json',
+                data: {"action": "more_history",
+                    "eventID": historicEventId,
+                    "event_attr_ID": eventAttrId,
+                    "event_timestamp": lastEventTs,
+                    "lang" : 1                },
+                beforeSend: function() {
+                },
+                complete: function() {
+                    $("#showMoreHistoryLoader" + parentEventDataId).addClass("displayNone");
+                },
+                success: function(data) {
+                    $(data["historyRows"]).appendTo('#' + tableId);
+                    if (!data["hasMoreHistory"]) {
+                        $(moreHistoryDivElement).removeClass("showMoreHistory").hide();
+                    }
+                    $(anchorElement).removeAttr('disabled');
+                }
+            });
+        }
+    }
+};
+
+$(function() {
+
+    if (location.hash != undefined && location.hash.length > 1) {
+        var hashEventId = location.hash.replace('#', '');
+        var searchedTrSelector = "#eventRowId_" + hashEventId;
+        var trObject = $(searchedTrSelector);
+        if (trObject != undefined && $(trObject).is("tr")) {
+            changeEventDisplay(hashEventId, trObject, "overview");
+            $.scrollTo($(searchedTrSelector).offset().top - 130);
+        }
+    }
+});
+
+
+var datePickerApplyButton = '<a class="newBtn Arrow LightGray">Apply</a>';
+
+var initLayout = function() {
+
+    $('#widgetHolCalendar').DatePicker({
+        flat: true,
+        format: 'm/d/Y',
+        date: [new Date('2023/03/04'), new Date('2023/03/04')],
+        calendars: 1,
+        mode: 'range',
+        starts:  0,
+		onChange: function(formated) {
+			$('#widgetField #widgetFieldDateRange').get(0).innerHTML = formated.join(' - ');
+
+		},
+        locale: {
+            days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            daysShort: ["Sun.", "Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat.", "Sun."],
+            daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            monthsShort: ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."],
+            weekMin: 'wk'
+        }
+    });
+
+
+    var state = false;
+    $('#datePickerIconWrap,#widgetField').bind('click', function(){
+        $('#widgetHolCalendar').stop().animate({height: state ? 0 : $('#widgetHolCalendar div.datepicker').get(0).offsetHeight}, 500);
+        if (state)
+        {
+            $('#widgetFieldBottomBorder').addClass("displayNone");
+        }
+        else
+        {
+            $('#widgetFieldBottomBorder').removeClass("displayNone");
+        }
+        state = !state;
+        return false;
+    });
+
+
+    $('#datePickerApplyButton').bind('click', function(){
+        $('#widgetHolCalendar').stop().animate({height: state ? 0 : $('#widgetHolCalendar div.datepicker').get(0).offsetHeight}, 500);
+        $('#widgetFieldBottomBorder').addClass("displayNone");
+
+        if (($('#widgetHolCalendar').DatePickerGetDate(0)[0] != 'Invalid Date') &&
+                ($('#widgetHolCalendar').DatePickerGetDate(0)[1] != 'Invalid Date')
+                ) {
+            var dateFrom = $('#widgetHolCalendar').DatePickerGetDate(0)[0];
+            var dateFromStr = dateToString(dateFrom);
+            var dateTo = $('#widgetHolCalendar').DatePickerGetDate(0)[1];
+            var dateToStr = dateToString(dateTo);
+            //Set the input fields
+            $('#dateFrom').val(dateFromStr);
+            $('#dateTo').val(dateToStr);
+            //Cancel any selection of timeframe
+            $('a[id^="timeFrame"]').removeClass("toggled");
+            $('input[id="timeframe"]').val('');
+            $('a[id^="timeFrame_"]').unbind('click', timeFrameOnClickHandler).bind('click', timeFrameOnClickHandler);
+            economicCalendarFormSubmit();
+        }
+
+        state = !state;
+        return false;
+    });
+
+    $('body').click(function() {
+        //close date picker
+        if (state){
+            $('#widgetHolCalendar').stop().animate({height: state ? 0 : $('#widgetHolCalendar div.datepicker').get(0).offsetHeight}, 500);
+            $('#widgetFieldBottomBorder').addClass("displayNone");
+            var dateFromStr = $('#dateFrom').val();
+            var dateToStr = $('#dateTo').val();
+            var dateFrom = parseDate(dateFromStr);
+            var dateTo = parseDate(dateToStr);
+            if (dateFrom != null && dateTo != null) {
+                $('#widgetHolCalendar').DatePickerSetDate(new Array(dateFrom, dateTo), true);
+            }
+            state = !state;
+        }
+        //close timezone selection
+        if ($("#ecoCurrentTimePop").is(":visible")) {
+            $("#ecoCurrentTimePop").addClass("displayNone");
+        }
+    });
+
+    $('#widgetHolCalendar div.datepicker').css('position', 'absolute');
+    $('#datePickerApplyButton').html(datePickerApplyButton);
+
+    function parseDate(dateStr)
+    {
+        if (typeof(dateStr) != "string") {
+            return null;
+        }
+        dateArr = dateStr.split("-");
+        if (!$.isArray(dateArr) || dateArr.length != 3) {
+            return null;
+        }
+        //new Date(year, month, day, hours, minutes, seconds, milliseconds);
+        return new Date(dateArr[0], (parseInt(dateArr[1]) - 1), parseInt(dateArr[2]), 0, 0, 0, 0);
+    }
+};
+EYE.register(initLayout, 'init');
+
+
+//Restore Defaults
+var defaultParams = {"timeFilter":"timeRemain","dateFrom":"2023-03-04","dateTo":"2023-03-04","country":["25","6","37","72","22","17","39","10","35","43","26","12","4","5"],"importance":["1","2","3"],"category":["_employment","_economicActivity","_inflation","_credit","_centralBanks","_confidenceIndex","_balance","_Bonds"]};
+$("#filterRestoreDefaults").click(function(){
+	var restoreFilterFields = new Array("country"/*, "category", "importance"*/);
+    var i,j;
+    for (i = 0; i < restoreFilterFields.length; i++) {
+        var filterName = restoreFilterFields[i];
+        clearAll(filterName + "[]");
+        if (defaultParams[filterName] != undefined
+                && defaultParams[filterName].length > 0
+                ) {
+            for(j = 0; j < defaultParams[filterName].length; j++) {
+                $("input[id='" + filterName + defaultParams[filterName][j] + "']").attr('checked','checked');
+            }
+        }
+    }
+
+  	if (defaultParams["timeFilter"] == "timeRemain") {
+  		$('#timeFiltertimeOnly').removeAttr('checked');
+  		$('#timeFiltertimeRemain').attr('checked','checked');
+  		$('#timeFiltertimeRemain').prop('checked', true)
+  		timeFilter = true;
+  	} else if (defaultParams["timeFilter"] == "timeOnly") {
+  		$('#timeFiltertimeRemain').removeAttr('checked');
+  		$('#timeFiltertimeOnly').attr('checked','checked');
+  		$('#timeFiltertimeOnly').prop('checked', true)
+  		timeFilter = false;
+  	}
+  	clearAll("category[]"); 
+	clearAll("importance[]"); 
+});
+//End of Restore Defaults
+//----------------------------------------------------------------------------------------------------
+
+//Next event
+//top border of next event should be bold using class
+var currentDateTime = parseDateTime('2023-03-04 07:06:10');
+
+//End of Next event
+//----------------------------------------------------------------------------------------------------
+
+function economicCalendarFormSubmit(params) {
+    if (typeof nextEventTimeoutVar != "undefined") {
+        clearTimeout(nextEventTimeoutVar);
+    }
+    if (params == undefined) {
+        params = $("#economicCalendarForm").serialize();
+    }
+    params = params + '&action=filter&lang=1';
+    filterStateButton();
+    $.ajax({
+        url: "/ajax.php", // /economic-calendar/filter
+        type: "POST",
+        dataType: 'json',
+        data: params,
+        beforeSend: function() {
+            showLoader();
+        },
+        complete: function() {
+            hideLoader();
+            //close the filters after any apply
+            if ($("#filtersWrapper").is(':visible')) {
+                changeFiltersVisibility(true);
+            }
+        },
+        success: function(data) {
+            $("#ecEventsTable tbody").empty().html(data["renderedFilteredEvents"]);
+            $("#currentTime").empty().html(data["params"]["currentTimeHrMinFormatted"]);
+            $("#timeZoneGmtOffsetFormatted").empty().html(data["params"]["gmtTimeFormat"]);
+            var cdt = parseDateTime(data["params"]["requestTimeFormatted"]);
+            currentDateTime = new Date(Math.floor(cdt.getTime()/60000) * 60000);
+            var curTime = new Date();
+            curTime = new Date(Math.floor(curTime.getTime()/60000) * 60000);
+    		moveTimeSeparatorLine(curTime);
+    		//resetNextEventLine(currentDateTime);
+            clearTimeout(cEPT_timer);
+            calcEventPushTime( cEPT_hh, cEPT_mm, cEPT_mLong, true);
+            if(data["params"]["timeFrame"] != null){
+                $('#timeFrame_'+data["params"]["timeFrame"]).addClass("toggled");
+
+            }
+            if($('#widgetHolCalendar').length >0){
+				$('#widgetHolCalendar').DatePickerSetDate(new Array(data['params']["dateFrom"], data['params']["dateTo"]), true);
+				$('#widgetFieldDateRange').get(0).innerHTML = $('#widgetHolCalendar').DatePickerGetDate(true)[0] + " - " + $('#widgetHolCalendar').DatePickerGetDate(true)[1];
+			}
+        }
+    });
+}
+
+$(document).ready(function(){
+
+	var menu = document.querySelector('#headerRow');
+	var origTopCoordinateMenu = menu.offsetTop;
+
+	function scroll () {
+	  if ($(window).scrollTop() >= origTopCoordinateMenu) {
+	    $('#headerRow').addClass('floating');
+	  }
+	  if ($(window).scrollTop() <= origTopCoordinateMenu) {
+	    $('#headerRow').removeClass('floating');
+	  }
+	}
+	document.onscroll = scroll;
+});
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/0.3.4/sockjs.min.js"></script><script type="text/javascript"> stream="https://streaming.forexpros.com:443";</script><script src="https://streamjs.investing.com/tools/fxindex2.js"></script><script>var pid_arr = Array("event-468922:","event-468923:","event-468928:","event-468875:","event-468879:","event-468880:","event-468886:","event-468883:","event-468881:","event-468873:","event-468884:","event-468871:","event-468882:","event-468887:","event-468885:","event-468877:","event-468869:","event-468868:","event-468867:","event-468876:","event-468878:","event-468829:");var TimeZoneID = 25;</script>
+<script type="text/javascript" src="https://i-invdn-com.investing.com/js/jscharts-economic-calendar-2.6.12.min.js"></script>
+<style>
+		/* Chart's Bar */
+		.chartBarWrap {
+			border: 1px solid #C7C7C7;
+			border-top: 1px solid #adadad;
+			padding: 4px 0;
+			background: #fdfdfd;
+			background: -o-linear-gradient(top, #fdfdfd 0%, whitesmoke);
+			background: -ms-linear-gradient(top, #fdfdfd 0%, whitesmoke);
+			background: -moz-linear-gradient(top, #fdfdfd 0%, whitesmoke);
+			background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(whitesmoke));
+			filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#fdfdfd, endColorstr=#f5f5f5, GradientType=0); /* IE */
+		}
+
+		.chartBarWrap UL {
+			border-style: solid;
+			border-color: #bfbfbf;
+			border-width: 0 1px 0 0;
+			height: 20px;
+			margin: 0 10px 0 0;
+			padding: 0 10px 0 0;
+		}
+
+		.chartBarWrap UL:first-child {
+			border-right: 1px solid #bfbfbf;
+			height: 20px;
+			margin: 0 10px 0 11px;
+			padding-right: 10px;
+		}
+
+		.chartBarWrap UL:last-of-type {
+			border-right-width: 0;
+			margin-right: 0;
+			padding-right: 0;
+		}
+
+		.round-items LI A, .round-items LI {
+			display: inline-block;
+		}
+
+		.round-items LI A {
+			height: 17px;
+			width: 19px;
+			padding-top: 2px;
+			margin: 0;
+			text-align: center;
+			border: 1px solid transparent;
+			-moz-border-radius: 2px;
+			-ms-border-radius: 2px;
+			-o-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			border-radius: 2px;
+		}
+
+		.round-items LI:hover A {
+			border: 1px solid #bababa;
+			margin: 0;
+		}
+
+		.round-items LI.selected A {
+			border: 1px solid #858585;
+			margin: 0;
+			background-color: #e0e0e0;
+			-webkit-box-shadow: inset 0 2px 2px 0 #c0c0c0;
+			box-shadow: inset 0 2px 2px 0 #c0c0c0;
+		}
+
+		.round-items li.selected:hover a {
+			margin: 0;
+		}
+
+		.chart-wrapper {
+			margin-top: 6px;
+		}
+
+		.chart-wrapper .advancedChart {
+			margin: 3px 5px 0;
+		}
+
+		.round-items LI A {
+			font-weight: bold;
+			color: #333;
+		}
+
+		.round-items LI A:hover {
+			text-decoration: none;
+		}
+
+		.chartWrap {
+			border: 1px solid #c7c7c7;
+			border-top: 0;
+		}
+
+		.fchart-switches.types a {
+			color: transparent !important;
+			text-indent: -9999px;
+		}
+
+		.columnChartIcon {
+			background-image: URL("https://i-invdn-com.investing.com/newSiteIconsSprite_v30h.png");
+			background-position: -129px -1291px;
+			display: inline-block;
+			width: 15px;
+			height: 11px;
+		}
+		.diagramIcon {
+			background-image: URL("https://i-invdn-com.investing.com/newSiteIconsSprite_v30h.png");
+			background-position: -41px -1031px;
+			display: inline-block;
+			width: 17px;
+			height: 16px;
+		}
+		.maxChartBtn {
+			position: relative;
+		}
+		.maxChartBtn A {
+			line-height: 16px;
+			font-size: 8px;
+			position: relative;
+			top: -1px;
+		}
+
+		.chartsTooltipGroupWrapper {
+			/*border: 1px solid #e0e0e0;*/
+			background-color: #f2f2f2;
+			padding: 11px 10px 5px 9px;
+			line-height: 18px;
+			/*-webkit-box-shadow: 0 1px 3px rgba(64, 64, 64, 0.21);
+			-moz-box-shadow: 0 1px 3px rgba(64, 64, 64, 0.21);
+			box-shadow: 0 1px 3px rgba(64, 64, 64, 0.21);*/
+		}
+		.chartsTooltipGroupTable .chartsTooltipGroupHeader {
+			font-size: 12px;
+			padding: 0 0 5px 2px;
+			display: block;
+		}
+		.chartsTooltipGroupFooter {
+			color: #9b9b9b;
+			/*border-top: 1px solid #e0e0e0;*/
+			padding-left: 3px;
+		}
+		.chartsTooltipGroupTable {
+			line-height: 18px;
+			font-size: 11px;
+			font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+			display: table;
+		}
+		HTML.ae .chartsTooltipGroupTable {
+			font-family: Tahoma, Arabic Transparent, "Simplified Arabic", "Traditional Arabic"
+		}
+		.chartsTooltipGroupHeader {
+			display: table-row;
+		}
+		.chartsTooltipGroupRow {
+			display: table-row;
+		}
+		.chartsTooltipCell {
+			display: table-cell;
+		}
+		.chartsTooltipGroupFooter {
+			display: block;
+		}
+		/*.chartsTooltipGroupTable .chartsTooltipGroupBody .chartsTooltipGroupRow .chartsTooltipCell {
+			padding: 2px 3px 0 0;
+		}*/
+		.chartsTooltipGroupTable .chartsTooltipCell.value {
+			padding-right: 3px;
+		}
+		.chartsTooltipGroupTable .chartsTooltipCell.name {
+			min-width: 126px;
+			padding-right: 3px;
+		}
+		/*.chartsTooltipGroupTable .chartsTooltipGroupBody .chartsTooltipGroupRow:first-child .chartsTooltipCell {
+			border-top: 1px solid #e0e0e0;
+			padding-top: 5px;
+		}*/
+		.chartsTooltipGroupTable .chartsTooltipGroupBody .chartsTooltipGroupRow.last .chartsTooltipCell {
+			padding: 0;
+		}
+		.chartsTooltipGroupTable .chartsTooltipGroupBody .chartsTooltipGroupRow.last .chartsTooltipCell.name {
+			padding: 0 3px 0 0;
+		}
+		.chartsTooltipGroupTable .chartsTooltipGroupBody .chartsTooltipGroupRow.last .chartsTooltipCell.value {
+			padding: 0 3px 0 0;
+		}
+		.chartsTooltipGroupBlueBox, .chartsTooltipGroupGreyBox {
+			width: 8px;
+			height: 8px;
+			margin: -2px 0 0 5px;
+		}
+	</style>
+<script type="text/javascript" src="/view/highstock.js"></script>
+<script>
+$(document).ready(function() {
+	// Set translations for chart
+	FPCharts.Utils.set_translation('Actual',  'Actual');
+	FPCharts.Utils.set_translation('Forecast',  'Forecast');
+	FPCharts.Utils.set_translation('Revised From', 'Revised From');
+	FPCharts.Utils.set_translation('No data to display', 'No data to display');
+	FPCharts.Utils.set_translation('Area Chart', 'Area chart');
+	FPCharts.Utils.set_translation('Histogram Chart', 'Histogram Chart');
+	FPCharts.Utils.set_translation('6 Months', '6 months');
+	FPCharts.Utils.set_translation('1 Year', '1 year');
+	FPCharts.Utils.set_translation('2 Years', '2 years');
+	FPCharts.Utils.set_translation('Maximum', 'Maximum');
+	ecReady();
+
+	calcEventPushTime( 'h' ,'m','min',  true );
+});
+
+var dateObj= new Date();
+
+var defaultParams = {"timeFilter":"timeRemain","dateFrom":"2023-03-04","dateTo":"2023-03-04","country":["25","6","37","72","22","17","39","10","35","43","26","12","4","5"],"importance":["1","2","3"],"category":["_employment","_economicActivity","_inflation","_credit","_centralBanks","_confidenceIndex","_balance","_Bonds"]};
+
+function updateTitleText(remainTime, typeEvent){
+	var titleTmplt = 'Event data was released %TIME% ago';
+	var titleTmpltUpcoming = 'Event data will be released at %TIME%';
+	//"Event data will be released in %TIME%"
+	var titleTmpltUpcomingNoDspl ='Event data will be released in %TIME%';
+
+	if(typeEvent == 'released')
+		return titleTmplt.replace('%TIME%', remainTime);
+	if(typeEvent == 'upcoming')
+		return titleTmpltUpcoming.replace('%TIME%', remainTime);
+	if(typeEvent == 'upcomingNoDspl')
+		return titleTmpltUpcomingNoDspl.replace('%TIME%', remainTime);
+}
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="https://ssl.google-analytics.com/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2555300-21");
+pageTracker._trackPageview();
+} catch(err) {}</script></div>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon="{&quot;rayId&quot;:&quot;7a2846669cb04497&quot;,&quot;token&quot;:&quot;00ab903b5e184b1a9d53b0a7a5085300&quot;,&quot;version&quot;:&quot;2023.2.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+<eopchk></eopchk><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="https://ssl.google-analytics.com/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2555300-21");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+	
 </body>
 </html>
